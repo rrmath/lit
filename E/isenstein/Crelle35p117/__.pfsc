@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.E.isenstein.Crelle35p117
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Exx, 11E20",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.E.isenstein.Crelle35p117",
+    "pages": {
+        "first": 117,
+        "last": 136
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002145928"
+    ],
+    "title": "Neue Theoreme der höheren Arithmetik",
+    "volume": 35,
+    "year": 1847
+}'

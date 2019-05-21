@@ -1,0 +1,121 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Rxx",
+    "journal": "JDMV",
+    "kind": "article",
+    "libpath": "lit.H.ilbert.ZB",
+    "nickname": "The Zahlbericht",
+    "pages": {
+        "first": 175,
+        "last": 546
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002115344"
+    ],
+    "title": "Die Theorie der algebraischen Zahlkörper",
+    "volume": 4,
+    "year": 1897
+}'
+
+runningDefs = '
+[
+    {
+        "rhs": "an element of $k$", 
+        "lhs": "$\\alpha$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm5",
+            "lit.H.ilbert.ZB.Line1p180"
+        ]
+    }, 
+    {
+        "rhs": "a number field", 
+        "lhs": "$k$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm5",
+            "lit.H.ilbert.ZB.Line1p180",
+            "lit.H.ilbert.ZB.Thm8",
+            "lit.H.ilbert.ZB.Thm90",
+            "lit.H.ilbert.ZB.Thm26",
+            "lit.H.ilbert.ZB.Thm31"
+        ]
+    }, 
+    {
+        "rhs": "the degree of the field $k$", 
+        "lhs": "$m$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm5",
+            "lit.H.ilbert.ZB.Line1p180",
+            "lit.H.ilbert.ZB.Thm8"
+        ]
+    }, 
+    {
+        "rhs": "elements of $k$", 
+        "lhs": "$\\alpha_1, \\ldots, \\alpha_r$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm8"
+        ]
+    }, 
+    {
+        "rhs": "a Galois field", 
+        "lhs": "$K$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Lem11",
+            "lit.H.ilbert.ZB.Thm67"
+        ]
+    }, 
+    {
+        "rhs": "the degree of the field $K$", 
+        "lhs": "$M$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Lem11",
+            "lit.H.ilbert.ZB.Thm67"
+        ]
+    }, 
+    {
+        "rhs": "an odd rational prime", 
+        "lhs": "$\\ell$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm118",
+            "lit.H.ilbert.ZB.Thm117",
+            "lit.H.ilbert.ZB.Thm119"
+        ]
+    }, 
+    {
+        "rhs": "$1 - \\zeta$", 
+        "lhs": "$\\lambda$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm118"
+        ]
+    }, 
+    {
+        "rhs": "the equation of degree $\\ell - 1$ satisfied by $\\zeta$", 
+        "lhs": "$F(x)$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm118"
+        ]
+    }, 
+    {
+        "rhs": "$\\mathrm{e}^{2 i \\pi / \\ell}$", 
+        "lhs": "$\\zeta$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm119"
+        ]
+    }, 
+    {
+        "rhs": "$\\mathbb{Q}(\\zeta)$", 
+        "lhs": "$k$", 
+        "accept": [
+            "lit.H.ilbert.ZB.Thm119"
+        ]
+    }
+]'
+

@@ -1,0 +1,196 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm118
+###############################################################################
+
+from .Pg180L1 import Thm as RemarkOnP180
+from .Thm5 import Pf as Thm5Pf
+
+deduc Thm {
+
+    intr I0 {
+        en = "
+        Let $@zeta = e sup 2 i pie / ell;$,
+        $@k = bbQ(zeta)$.
+        "
+    }
+
+    asrt C1 {
+        en = "
+        The numbers
+        $@1, zeta, zeta squ, ddd, zetauuell-2$
+        form a basis for $k$.
+        "
+    }
+
+    asrt C2 {
+        en = "
+        The discriminant of $k$ is
+        $@d = (-1) sup (ell - 1) / 2; ell sup ell - 2;$
+        "
+    }
+
+    meson = "
+    Let I0. Then C1 and C2.
+    "
+}
+
+deduc Pf1 of Thm.C1 {
+
+    asrt A1 {
+        en = "
+        The different of the number $@zeta$ in $k$ is
+        $@delta = qnt zeta - zeta squ; qnt zeta - zeta^3;
+        ccc qnt zeta - zetauuell-1; =
+        bqnt frac d F(x) over d x;; sub x = zeta;$
+        "
+    }
+
+    asrt A2 {
+        sy = "$@(x - 1) F(x) = xuuell - 1$"
+    }
+
+    asrt A3 {
+        sy = "$@(x - 1) frac d F(x) over d x; + F(x) = ell xuuell-1$"
+    }
+
+    asrt A4 {
+        sy = "$@delta = - frac ell zetauuell-1 over 1 - zeta;$"
+    }
+
+    intr I5 {
+        en = "
+        Let $@d(zeta)$ be the discriminant of $@zeta$,
+        and $@d(lam)$ that of $@lam$.
+        "
+    }
+
+    asrt A6 {
+        sy = "$@d(zeta) = (-1) sup frac (ell - 1)(ell - 2) over 2;; n(delta) = (-1) sup frac ell - 1 over 2;; elluuell-2$"
+    }
+
+    intr I7 {
+        en = "Let $@alp$ be any integer of the field $k$."
+    }
+
+    asrt A8 {
+        sy = "$@d(lam) = d(zeta)$"
+    }
+
+    exin E9 {
+
+        en = "There exist % such that"
+
+        intr I1 {
+            sy = "$@a0, a1, ddd, aell-2 in bbZ$"
+        }
+
+        asrt A2 {
+            sy = "(33) $@quad alp = frac a0 + a1 lam + ccc + aell-2 lamuuell-2 over elluuell-2;$"
+        }
+    }
+
+    subdeduc SbPf {
+
+        supp S10 {
+            en = "
+            Suppose $@a0, a1, ddd, aell-2$ were not
+            all divisible by $@ell$.
+            "
+        }
+
+        intr I20 {
+            en = "
+            Let $@ag$ be the first coefficient
+            not divisible by $@ell$.
+            "
+        }
+
+        asrt A30 {
+            sy = "$@elluuell-2 alp equiv 0 mod ell$"
+        }
+
+        asrt A40 {
+            sy = "$@ell = frluuell-1$"
+        }
+
+        asrt A50 {
+            sy = "$@ag lamuug equiv 0 mod frluug+1$"
+        }
+
+        asrt A60 {
+            sy = "$@ag equiv 0 mod frl$"
+        }
+
+        asrt A70 {
+            sy = "$@ag equiv 0 mod ell$"
+        }
+
+        flse F80 {}
+
+        asrt A90 {
+            en = "
+            One can cancel a factor of $@ell$
+            in the numerator and denominator
+            of [(33)](Pf1.E9.A2).
+            "
+        }
+
+        mthd M100 {
+            en = "continuing this process"
+        }
+
+        asrt A110 {
+            en = "
+            The numbers $@a0, a1, ddd, aell-2$ are all
+            divisible by the denominator $@elluuell-2$.
+            "
+        }
+
+        meson = "
+        Suppose S10, let I20.
+        Then A50, using A30 and A40.
+        Then A60, so A70, hence F80, by I20.
+        Hence A90.
+        Therefore A110, applying M100.
+        "
+    }
+
+    asrt A11 {
+        en = "
+        In the representation of any number $@alp$
+        of the field $@k(zeta)$ in the form
+        $@a0 + a1 lam + ccc + aell-2 lamuuell-2$, or
+        $@b0 + b1 zeta + ccc + bell-2 zetauuell-s$,
+        with rational coefficients $@a0, a1, ddd, aell-2$,
+        and $@b0, b1, ddd, bell-2$, these coefficients
+        are in fact all integers.
+        "
+    }
+
+    meson = "
+    Thm.I0. Now A1. But A2, so A3. Therefore A4, using A1.
+    Now let I5. Then A6, by A4 and RemarkOnP180.
+    Now let I7. Then E9 by A8 and Thm5Pf.A11.
+    Then A11 by SbPf, hence Thm.C1.
+    "
+}
+
+deduc Pf2 of Thm.C2 {
+
+    asrt A1 {
+        en = "
+        The discriminant of $k$
+        equals $@d(zeta)$.
+        "
+    }
+
+    meson = "
+    A1 by Thm.C1.
+    Then Thm.C2, by Pf1.A6.
+    "
+}

@@ -1,0 +1,30 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Pg180L1
+###############################################################################
+
+deduc Thm {
+
+    intr I0 {
+        en = "
+        Let $@d(alp)$ be the discriminant of a number,
+        and let $@delta$ be its different.
+        "
+    }
+
+    asrt C1 {
+        en = "$@d(alp)$ is a rational number"
+    }
+
+    asrt C2 {
+        sy = "$@d(alp) = (-1) sup frac m (m - 1) over 2;; n(delta)$"
+    }
+
+    meson = "
+    Let I0. Then C1 and C2.
+    "
+}

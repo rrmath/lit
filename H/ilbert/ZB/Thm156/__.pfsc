@@ -1,0 +1,45 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm156
+###############################################################################
+
+deduc Thm {
+
+    intr I10 {
+        en = "
+        Let $@ell$ be a regular prime,
+        $@zeta$ a primitive $@ell eth t h ;$ root of unity,
+        and $@sfE$ a unit in $@bbQ(zeta)$.
+        "
+    }
+
+    supp S20 {
+        en = "
+        Suppose $@sfE$ is congruent to
+        a rational integer mod $@ell$.
+        "
+    }
+
+    asrt A30 {
+        en = "
+        $@sfE$ is the $@ell eth$ power of
+        some unit in $@bbQ(zeta)$.
+        "
+    }
+
+    meson = "
+    Let I10. Suppose S20. Then A30.
+    "
+}
+
+deduc Pf of Thm.A30 {
+
+    meson = "
+    !
+    Thm.A30
+    "
+}

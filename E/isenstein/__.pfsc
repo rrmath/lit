@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.E.isenstein
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 16, 
+        "month": 4, 
+        "year": 1823
+    }, 
+    "death": {
+        "day": 11, 
+        "month": 10, 
+        "year": 1852
+    }, 
+    "givenNames": "Ferdinand Gotthold Max", 
+    "libpath": "lit.E.isenstein",
+    "portrait": "Eisenstein.jpg", 
+    "surname": "Eisenstein"
+}'
+
+

@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ronecker
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 7, 
+        "month": 12, 
+        "year": 1823
+    }, 
+    "death": {
+        "day": 29, 
+        "month": 12, 
+        "year": 1891
+    }, 
+    "givenNames": "Leopold", 
+    "libpath": "lit.K.ronecker",
+    "portrait": "Kronecker_1865.jpg", 
+    "surname": "Kronecker"
+}'
+
+

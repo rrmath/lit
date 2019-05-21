@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.edekind
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 6, 
+        "month": 10, 
+        "year": 1831
+    }, 
+    "death": {
+        "day": 12, 
+        "month": 2, 
+        "year": 1916
+    }, 
+    "givenNames": "Julius Wilhelm Richard", 
+    "libpath": "lit.D.edekind",
+    "portrait": "Dedekind_1900s.jpg", 
+    "surname": "Dedekind"
+}'

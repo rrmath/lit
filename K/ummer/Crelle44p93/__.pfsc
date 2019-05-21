@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer.Crelle44p93
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11A15, 11Rxx",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.K.ummer.Crelle44p93",
+    "pages": {
+        "first": 93,
+        "last": 146
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002147432"
+    ],
+    "title": "Über die Ergänzungssätze zu den allgemeinen Reciprocitätsgesetzen",
+    "volume": 44,
+    "year": 1852
+}'

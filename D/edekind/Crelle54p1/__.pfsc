@@ -1,0 +1,27 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.edekind.Crelle54p1
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11E95, 11Sxx",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.D.edekind.Crelle54p1",
+    "pages": {
+        "first": 1,
+        "last": 26
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002149877"
+    ],
+    "title": "Abriß einer Theorie der höheren Congruenzen in Bezug auf einen reellen Primzahl-Modulus",
+    "volume": 54,
+    "year": 1857
+}'
+

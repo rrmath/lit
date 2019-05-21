@@ -1,0 +1,27 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.E.uler
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 15, 
+        "month": 4, 
+        "year": 1707
+    }, 
+    "death": {
+        "day": 18, 
+        "month": 9, 
+        "year": 1783
+    }, 
+    "givenNames": "Leonhard", 
+    "libpath": "lit.E.uler",
+    "portrait": "Euler_8.jpg", 
+    "surname": "Euler"
+}'
+

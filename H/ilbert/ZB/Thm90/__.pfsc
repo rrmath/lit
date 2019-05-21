@@ -1,0 +1,122 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm90
+###############################################################################
+
+deduc Thm {
+
+    supp P {
+        en = "
+        $@N_{K|k}(A) = 1$, with $@A in K$, and $K$ a cyclic extension
+        of prime degree $@ell$ over $k$.
+        "
+    }
+
+    asrt C {
+        en = "
+        $@A = B^{1 - S}$ for some $@B in K$, where $S$ is a generating
+        automorphism of $K$ over $k$.
+        "
+    }
+
+    meson = "
+    Suppose P, then C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    intr I00 {
+        en = "Let $@Theta$ be a primitive element for $K$."
+    }
+
+    intr I01 {
+        en = "
+         Define $@Ax$ for $x$ in $k$, by
+         $@Ax = \frac{x + \Theta}{x + S\Theta} A$.
+         "
+    }
+
+    intr I02 {
+        en = "
+         Define $@Bx$ for $x$ in $k$, by
+         $@Bx = 1 + Ax^1 + Ax^{1 + S} +
+         Ax^{1 + S + S^2} + \cdots +
+         Ax^{1 + S + \cdots + S^{\ell - 2}}$
+         "
+    }
+
+    asrt A06 {
+        sy = "$@A^{1 + S + \cdots + S^{\ell - 1}} = 1$"
+    }
+
+    asrt A12 {
+        sy = "$@Ax^{1 + S + \cdots + S^{\ell - 1}} = 1$"
+    }
+
+    asrt A14 {
+        sy = "$@Bx^{1 - S} = Ax$"
+    }
+
+    asrt A18 {
+        en = "
+         $@Bx$ is a rational function of $x$,
+         which does not vanish for all $x$.
+         "
+    }
+
+    exin E19 {
+
+        en = "$@exists$ % such that"
+
+        intr I1 {
+            sy = "$@a in bbZ$"
+        }
+
+        asrt A1 {
+            sy = "$@Ba neq 0$"
+        }
+    }
+
+    intr I21 {
+        en = "Define $@B^* = \frac{Ba}{a + \Theta}$."
+    }
+
+    asrt A22 {
+        sy = "$@A = (B^*)^{1 - S}$"
+    }
+
+    exin E23 {
+
+        en = "We have % such that"
+
+        intr I1 {
+            sy = "$@B in calOK$"
+        }
+
+        intr I2 {
+            sy = "$@b in bbZ$"
+        }
+
+        asrt A1 {
+            sy = "$@B star = frac B over b;$."
+        }
+    }
+
+    asrt A24 {
+        sy = "$@A = B^{1 - S}$"
+    }
+
+    meson = "
+    Let I00, let I01, let I02.
+    A06 by Thm.P, so A12, hence A14.
+    A18, so E19.
+    Let I21. Then A22, by A14 and E19.A1.
+    Now E23, but A24 by A22 and E23.A1.
+    Hence Thm.C.
+    "
+}

@@ -1,0 +1,101 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm4
+###############################################################################
+
+deduc Thm {
+
+    intr I1 {
+        en = "Let $@alp$ be an algebraic integer."
+    }
+
+    supp S2 {
+        en = "Suppose $@alp$ is rational."
+    }
+
+    asrt C {
+        sy = "$@alp in bbZ$"
+    }
+
+    meson = "
+    Suppose I1 and S2. Then C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    exin E1 {
+
+        intr I1 {
+            sy = "$@a, b in bbZ$"
+        }
+
+        asrt A1 {
+
+            en = "$@a, b$ are relatively prime"
+
+            de = "$@a, b$ sind zu einander prime"
+        }
+
+        asrt A2 {
+            sy = "$@alp = frac a over b;$"
+        }
+    }
+
+    supp S2 {
+
+        en = "Suppose $@b > 1$."
+
+        de = "Wäre $@b > 1$,"
+    }
+
+    asrt A3 {
+
+        en = "
+        $@alp$ satisfies an equation whose
+        coefficients $@a1, ddd, am$ are in $@bbZ$.
+        "
+
+        de = "
+        $@alp$ genügt einer Gleichung, deren
+        Coefficienten $@a1, ddd, am$ ganze rationale
+        Zahlen sind.
+        "
+    }
+
+    mthd M4 {
+
+        en = "Multiply this equation by $@buum-1$."
+
+        de = "Multiplication dieser Gleichung mit $@buum-1$"
+    }
+
+    wher W5 {
+
+        de = "Haben % wo"
+
+        asrt A5 {
+            sy = "
+            $@frac auum over b; = -a1 auum-1 - a2 b auum-2 - ccc
+            - am buum-1 = A$
+            "
+        }
+
+        intr I6 {
+            sy = "$@A in bbZ$"
+        }
+    }
+
+    flse F7 {}
+
+    meson = "
+    E1 by Thm.S2. Suppose S2.
+    A3 by Thm.I1. Then W5.A5, applying M4.
+    From W5.I6 get F7 by S2 and E1.A1.
+    Therefore Thm.C.
+    "
+}

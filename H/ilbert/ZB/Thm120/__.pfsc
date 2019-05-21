@@ -1,0 +1,143 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm120
+###############################################################################
+
+from .Thm117 import Pf as ZB117Pf
+
+deduc Thm {
+
+    intr I {
+        en = "
+        Let $@ell$ be 2 or an odd prime.
+        Let $@sfZ = rme^{2 i pie/ell^h}$.
+        Let $@k = bbQ(sfZ)$.
+        "
+    }
+
+    asrt C1 {
+        sy = "$@[k : bbQ] = ell^{h - 1}(ell - 1)$"
+    }
+
+    asrt C2 {
+        en = "
+        $@ell$ decomposes in $k$ as
+                $@ell = frL^{ell^{h - 1}(ell - 1)}$
+        where $@frL$ is a prime ideal
+        of degree $1$ in $k$.
+        "
+    }
+
+    meson = "
+    Let I. Then C1 and C2.
+    "
+}
+
+deduc Pf of Thm.C1, Thm.C2 {
+
+    intr I10 {
+        en = "
+        Let
+        $@F(x) = frac x^{ell^h} - 1 over x^{ell^{h - 1}} - 1$
+                  $@= x^{ell^{h - 1}(ell - 1)} +
+                x^{ell^{h - 1}(ell - 2)} + ccc + 1$.
+        "
+    }
+
+    asrt A20 {
+        sy = "$@F(sfZ) = 0$"
+    }
+
+    intr I30 {
+        en = "
+        Let $@g, g' in bbZ$ be given,
+        such that $@ell not div g$ and
+        $@g g' equiv 1 mod ell^h$.
+        "
+    }
+
+    intr I40 {
+        en = "
+        Let
+        $@sfEg = frac 1 - sfZ^g over 1 - sfZ;$.
+        "
+    }
+
+    mthd M50 {
+        en = "
+        as in [Proof
+        of Thm 117](ZB117Pf)
+        "
+    }
+
+    asrt A60 {
+        en = "$@sfEg$ is an integer"
+    }
+
+    asrt A70 {
+        en = "
+        The reciprocal of $@sfEg$,
+        $@frac 1 - sfZ over 1 - sfZ^g; =
+         frac 1 - sfZ^{g g'} over 1 - sfZ^g;$
+        is an integer.
+        "
+    }
+
+    asrt A80 {
+        en = "$@sfEg$ is a unit"
+    }
+
+    mthd M90 {
+        en = "
+        as in [Proof
+        of Thm 117](ZB117Pf)
+        "
+    }
+
+    rels R100 {
+
+        asrt A10 {
+            sy = "$@F(1) = ell$"
+        }
+
+        asrt A20 {
+            sy = "
+            $$@= product over 0 < g < ell^h,\: (g, ell) = 1;
+                                (1 - sfZ^g)$$
+            "
+        }
+
+        asrt A30 {
+            sy = "
+            $$@= Lambda sup ell^{h - 1} (ell - 1) ;
+                        product over 0 < g < ell^h,\: (g, ell) = 1; sfEg$$
+            "
+        }
+
+        asrt A40 {
+            sy = "$@ = frL^{ell^{h - 1}(ell - 1)}$"
+        }
+    }
+
+    mthd M110 {
+        en = "
+        as in [Proof
+        of Thm 117](ZB117Pf)
+        "
+    }
+
+    meson = "
+    Have Thm.I.
+    Now let I10. Then A20.
+    Let I30. Let I40.
+    Then A60 and A70, applying M50.
+    Therefore A80.
+    Then R100, applying M90.
+    Hence Thm.C2.
+    From R100 get Thm.C1, applying M110.
+    "
+}

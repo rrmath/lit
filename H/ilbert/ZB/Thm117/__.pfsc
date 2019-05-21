@@ -1,0 +1,163 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm117
+###############################################################################
+
+from .Thm33 import Thm as Thm33
+
+deduc Thm {
+
+    intr I0 {
+        en = "
+        Let $@ell$ be an odd prime,
+        $@zeta = e sup 2 i pie / ell;$,
+        $@k = bbQ(zeta)$, and
+        let $@frl$ be the ideal $@qnt 1 - zeta;$.
+        "
+    }
+
+    asrt C1 {
+        en = "$@[k : bbQ] = ell - 1$"
+    }
+
+    asrt C2 {
+        en = "$@frl$ is a prime ideal in $k$"
+    }
+
+    asrt C3 {
+        en = "$@frl$ is of degree $1$"
+    }
+
+    asrt C4 {
+        en = "$@ell$ factors in $k$ as $@frl sup ell - 1;$"
+    }
+
+    meson = "
+    Suppose I0. Then C1 and C2 and C3 and C4.
+    "
+}
+
+deduc Pf of Thm.C1, Thm.C2, Thm.C3, Thm.C4 {
+
+    intr I0 {
+        en = "
+        Let
+        $@F(x) = frac xuuell - 1 over x - 1;$
+        $@= xuuell-1 + xuuell-2 + ccc + 1.$
+        "
+    }
+
+    asrt A1 {
+        en = "$@F(zeta) = 0$"
+    }
+
+    asrt A2 {
+        en = "$@[k:bbQ] leq ell - 1$"
+    }
+
+    asrt A3 {
+        en = "
+        $@zeta, zeta squ, ddd, zetauuell-1$ are
+        the $@ell - 1$ roots of $@F(x) = 0$
+        "
+    }
+
+    asrt A4 {
+        en = "
+        $@xuuell-1 + xuuell-2 + ccc + 1 =$
+        $@qnt x - zeta; qnt x - zeta squ; ccc qnt x - zetauuell-1;$
+        "
+    }
+
+    asrt A5 {
+        en = "
+         $@ell = qnt 1 - zeta; qnt 1 - zeta squ; ccc qnt 1 - zetauuell-1;$
+         "
+    }
+
+    mthd M6 {
+        en = "taking $@x = 1$"
+    }
+
+    intr I65 {
+        en = "
+        Let $@g in bbZ$ such that $@ell not div g$ and $@g > 1$ be given.
+        Let $@g' in bbZ$ satisfy $@g g' equiv 1 mod ell$.
+        "
+    }
+
+    asrt A7 {
+        en = "
+        $@frac 1 - zetauug over 1 - zeta; =$
+        $@1 + zeta + zeta squ + ccc + zetauug-1$
+        is an algebraic integer.
+        "
+    }
+
+    asrt A8 {
+        en = "
+        $@frac 1 - zeta over 1 - zetauug; = frac 1 - zeta sup g g'; over 1 - zetauug;$
+        $@= frac 1 - qnt zetauug; sup g'; over 1 - zetauug;$
+        $@= 1 + zetauug + zetauu2g; + ccc + zeta sup (g' - 1) g;$
+        is an algebraic integer.
+        "
+    }
+
+    intr I85 {
+        en = "Let $@vepg = frac 1 - zetauug over 1 - zeta;$."
+    }
+
+    asrt A9 {
+        en = "
+        $@vepg$ is a unit in $k$.
+        "
+    }
+
+    intr I10 {
+        en = "
+        Let $@lam = 1 - zeta$,
+        so $@frl = qnt lam;$.
+        "
+    }
+
+    asrt A11 {
+        en = "$@ell = lamuuell-1 vep2 vep3 ccc vepell-1 = frluuell-1$"
+    }
+
+    asrt A12 {
+        en = "
+        In a given number field, a
+        rational prime can be the
+        product of at most as many
+        prime ideals as the degree
+        of the field.
+        "
+    }
+
+    asrt A13 {
+        en = "$@[k:bbQ] geq ell - 1$"
+    }
+
+    asrt A14 {
+        en = "
+        $@ell$ cannot decompose
+        further in $k$
+        "
+    }
+
+    meson = "
+    Let I0. Then A1 by Thm.I0, so A2. A3 so A4.
+    Then A5 applying M6.
+    Let I85, let I65. Then A8 so A9 by A7 and I85.
+    Now let I10. Then A11 using A5 and A9.
+    From Thm33 find A12, so A13, using A11.
+    Then Thm.C1 by A2.
+    Meanwhile A14, by A2 and A11 and A12.
+    Hence Thm.C4, and Thm.C2.
+    Next Thm.C3.
+    "
+}

@@ -1,0 +1,19 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.edekind.DDIV
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Rxx",
+    "kind": "book",
+    "libpath": "lit.D.edekind.DDIV",
+    "nickname": "Dirichlet-Dedekind 4th Ed.",
+    "publisher": "Vieweg",
+    "title": "Vorlesungen über Zahlentheorie",
+    "year": 1894
+}'

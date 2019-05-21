@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.J.acobi
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 10, 
+        "month": 12, 
+        "year": 1804
+    }, 
+    "death": {
+        "day": 18, 
+        "month": 2, 
+        "year": 1851
+    }, 
+    "givenNames": "Carl Gustav Jacob", 
+    "libpath": "lit.J.acobi",
+    "portrait": "Jacobi.jpg", 
+    "surname": "Jacobi"
+}'
+
+

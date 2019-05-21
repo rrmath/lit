@@ -1,0 +1,52 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Lem2
+###############################################################################
+
+deduc Thm {
+
+    intr I1 {
+        en = "
+        Let
+        $@F(x) = alp1 xuur + alp2 xuur-1 + ccc$,
+        $@G(x) = beta1 xuus + beta2 xuus-1 + ccc$
+        be univariate polynomials whose coefficients
+        $@alp1, alp2, ddd$, $@beta1, beta2, ddd$
+        are algebraic integers.
+        "
+    }
+
+    intr I2 {
+        en = "
+        Let
+        $@F(x) G(x) = gam1 xuur+s + gam2 xuur+s-1 + ccc$
+        "
+    }
+
+    intr I3 {
+        en = "Let $@omega$ be an algebraic integer."
+    }
+
+    supp S {
+        en = "
+        Suppose the coefficients $@gam1, gam2, ddd$ of the product
+        $@F(x) G(x)$ are all divisible by $@omega$.
+        "
+    }
+
+    asrt C {
+        en = "
+        All the numbers
+        $@alp1 beta1, alp1 beta2, ddd, alp2 beta1, alp2 beta2, ddd$
+        are divisible by $@omega$.
+        "
+    }
+
+    meson = "
+    Let I1. Let I2. Let I3. Suppose S. Then C.
+    "
+}

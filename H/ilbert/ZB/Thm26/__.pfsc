@@ -1,0 +1,34 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm26
+###############################################################################
+
+deduc Thm {
+
+    intr I {
+        en = "
+        Let $@alp, alp1, ddd, alpr$ be integers of $k$.
+        Let $@frp$ be a prime ideal of $k$.
+        "
+    }
+
+    supp S {
+        sy = "$@alp not equiv 0 mod frp$"
+    }
+
+    asrt A {
+        en = "
+        A congruence mod $@frp$ of degree $r$ of the form
+            $@alp x^r + alp1 xuur-1 + ccc + alpr equiv 0 mod frp$
+        has at most $r$ incongruent roots mod $@frp$.
+        "
+    }
+
+    meson = "
+    Let I. Suppose S. Then A.
+    "
+}

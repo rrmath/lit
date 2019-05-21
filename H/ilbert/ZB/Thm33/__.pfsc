@@ -1,0 +1,68 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm33
+###############################################################################
+
+deduc Thm {
+
+    intr I0 {
+        en = "Let $p$ be a rational prime."
+    }
+
+    supp P1 {
+        en = "
+        Suppose $p$ factors into prime ideals
+        as $@frp sup e; frp' sup e'; ccc$.
+        "
+    }
+
+    intr I2 {
+        en = "Let $F$ be the fundamental equation."
+    }
+
+    exin C1 {
+
+        en = "There are % such that"
+
+        intr I1 {
+            en = "polynomials $@Pie, Pie',ddd$ in $@x, u1, ddd, um$"
+        }
+
+        asrt C0 {
+            sy = "$@F equiv Pie^e Pie' sup e'; ccc pmod p;$"
+        }
+
+        asrt C1 {
+            en = "$@Pie, Pie',ddd$ are distinct"
+        }
+
+        asrt C2 {
+            en = "$@Pie, Pie',ddd$ are irreducible mod $p$"
+        }
+    }
+
+    supp P2 {
+        en = "
+        Suppose $G$ satisfies
+        $@F = Pie^e Pie' sup e'; ccc + p G$.
+        "
+    }
+
+    asrt C2 {
+        en = "
+        $G$ is a polynomial in $@x, u1, ddd, um$
+        which is not divisible by any of the $@Pie, Pie', ddd$
+        mod $p$.
+        "
+    }
+
+    meson = "
+    Let I0. Suppose P1. Let I2.
+    Then C1.
+    Suppose P2. Then C2.
+    "
+}

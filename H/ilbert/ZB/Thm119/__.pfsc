@@ -1,0 +1,263 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm119
+###############################################################################
+
+from .Thm24 import Thm as Thm24
+from .Thm26 import Thm as Thm26
+from .Thm31 import Thm as Thm31
+from .Thm117 import Pf as Pf117
+from .Thm118 import Thm as Thm118
+
+deduc Thm {
+
+    intr I1 {
+        en = "
+        Let $p$ be a rational prime, $@p neq ell$.
+        "
+    }
+
+    intr I2 {
+        en = "
+        Let $f$ be the smallest positive exponent
+        such that $@p^f equiv 1 mod ell$.
+        "
+    }
+
+    intr I3 {
+        en = "
+        Define $e$ by $@ell - 1 = e f$.
+        "
+    }
+
+    asrt A {
+        en = "
+        $p$ factors in $k$ as
+                      $@p = frp1 ccc frpe$
+        where the $@frpi$ are distinct prime
+        ideals of degree $f$ in $k$.
+        "
+    }
+
+    meson = "
+    Let I1, let I2, let I3. Then A.
+    "
+}
+
+deduc Pf of Thm.A {
+
+    intr I10 {
+        en = "
+        Let $@alpha = a + a1 zeta + ccc + aell-2 zeta sup ell - 2;$
+        be an arbitrary integer of $k$.
+        "
+    }
+
+    subdeduc S20 {
+
+        asrt A1 {
+            sy = "
+            $@alp sup p; equiv a + a1 zeta sup p; + ccc +
+            aell-2 zeta sup p qnt ell - 2;; mod p$
+            "
+        }
+
+        asrt A2 {
+            sy = "
+            $@alp sup p squ; equiv a + a1 zeta sup p squ; + ccc +
+            aell-2 zeta sup p squ qnt ell - 2;; mod p$
+            "
+        }
+
+        asrt A3 {
+            sy = "$@ccc$"
+        }
+
+        rels R4 {
+
+            asrt A1 {
+                sy = "
+                $@alp sup p^f; equiv a + a1 zeta sup p^f; + ccc +
+                aell-2 zeta sup p^f qnt ell - 2;; mod p$
+                "
+            }
+
+            asrt A2 {
+                sy = "$@ equiv alp mod p$"
+            }
+        }
+
+        meson = "
+        A1. A2. A3. R4.
+        Have R4.A2 by Thm.I2.
+        "
+    }
+
+    intr I30 {
+        en = "
+        Let $@frp$ be any prime
+        ideal dividing $p$.
+        "
+    }
+
+    asrt A40 {
+        sy = "$@alp^{p^f} equiv alp mod frp$"
+    }
+
+    asrt A50 {
+        en = "
+        The congruence
+                       $@ksi sup p^f; - ksi equiv 0 mod frp$
+        is satisfied by all integers of the field $k$.
+        "
+    }
+
+    intr I60 {
+        en = "
+        Let $r$ be the number of incongruent
+        roots of this congruence mod $@frp$.
+        "
+    }
+
+    asrt A70 {
+        en = "
+        By definition, $@n(frp)$ is the number
+        of incongruent integers of $k$, $@mod frp$.
+        "
+    }
+
+    intr I80 {
+        en = "
+        Let $@f'$ be the degree
+        of the prime ideal $@frp$.
+        "
+    }
+
+    rels R90 {
+
+        asrt A1 {
+            sy = "$@r = n(frp)$"
+        }
+
+        asrt A2 {
+            sy = "$@= p^{f'}$"
+        }
+    }
+
+    asrt A95 {
+        sy = "$@r leq p^f$"
+    }
+
+    asrt A100 {
+        sy = "$@p^{f'} leq p^f$"
+    }
+
+    asrt A110 {
+        sy = "$@f' leq f$"
+    }
+
+    asrt A120 {
+        sy = "$@zeta sup p^{f'} - 1; equiv 1 mod frp$"
+    }
+
+    subdeduc S130 {
+
+        intr I1 {
+            en = "
+            Let $g$ be a rational integer
+            not divisible by $@ell$.
+            "
+        }
+
+        asrt A2 {
+            en = "$@1 - zeta^g$ is prime to $@frp$."
+        }
+
+        meson = "
+        Let I1. Then A2 by Pf117.A5 and Thm.I1.
+        "
+    }
+
+    asrt A140 {
+        sy = "$@p^{f'} - 1 equiv 0 mod ell$"
+    }
+
+    asrt A150 {
+        sy = "$@f' geq f$"
+    }
+
+    asrt A160 {
+        sy = "$@f' = f$"
+    }
+
+    asrt A170 {
+        en = "
+        Every prime ideal dividing
+        $p$ has degree $f$.
+        "
+    }
+
+    asrt A180 {
+        en = "
+        $p$ does not divide
+        the discriminant of $k$.
+        "
+    }
+
+    asrt A190 {
+        en = "
+        $p$ factors in $k$ as a
+        product of distinct primes.
+        "
+    }
+
+    intr I200 {
+        en = "Let $@p = frp1 ccc frp_{e'}$."
+    }
+
+    asrt A210 {
+        sy = "$@n(p) = p sup e' f;$"
+    }
+
+    asrt A220 {
+        sy = "$@n(p) = puuell-1$"
+    }
+
+    asrt A230 {
+        sy = "$@ell - 1 = e' f$"
+    }
+
+    asrt A240 {
+        sy = "$@e' = e$"
+    }
+
+    meson = "
+    Let I10. S20. Let I30.
+    Then A40 by S20.R4.A2.
+    Therefore A50.
+    Let I60. Let I80.
+    R90.
+    Have R90.A1 by A50 and A70.
+    Have R90.A2 by I80.
+    From R90 get A100 by A95, using Thm26.
+    So A110.
+
+    But A120, using Thm24 and I80.
+    So A140, by S130.
+    Therefore A150 by Thm.I2,
+    hence A160, by A110.
+    Therefore A170.
+
+    Observe A180, by Thm118 and Thm.I1.
+    So A190, using Thm31.
+    Let I200.
+    Then A210 by A190 and A170.
+    But A220, so A230 by A210.
+    Hence A240, using Thm.I3.
+    Therefore Thm.A, by A170.
+    "
+}

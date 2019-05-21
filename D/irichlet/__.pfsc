@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.irichlet
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 13, 
+        "month": 2, 
+        "year": 1805
+    }, 
+    "death": {
+        "day": 5, 
+        "month": 5, 
+        "year": 1859
+    }, 
+    "givenNames": "Johann Peter Gustav Leujeune", 
+    "libpath": "lit.D.irichlet",
+    "portrait": "Dirichlet.jpg", 
+    "surname": "Dirichlet"
+}'

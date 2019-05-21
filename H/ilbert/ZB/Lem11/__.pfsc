@@ -1,0 +1,134 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Lem11
+###############################################################################
+
+deduc Thm {
+
+    intr I {
+        en = "Let $@frJ$ be an invariant ideal of the Galois field $K$."
+    }
+
+    asrt C {
+        en = "The $@M!$ power of $@frJ$ is equal to a rational integer."
+    }
+
+    meson = "
+    Let I. Then C
+    "
+}
+
+deduc Pf of Thm.C {
+
+    intr I01 {
+        #In the original text, Hilbert used capital alpha instead
+        #of lower case (and correspondingly capital beta, gamma, etc.
+        #below, instead of lower case). However, this is problematic
+        #since capital alpha is indistinguishable from capital &#x27;A&#x27;,
+        #which Hilbert used precisely as we have in this transcription.
+        en = "
+        Let $@alp$ be a number in the ideal $@frJ$,
+        $@alp = s1 alp, s2 alp, ddd, sM alp$ the conjugates of $@alp$, and
+        $@A1, A2, ddd, AM$ the $M$ elementary symmetric functions
+        thereof.
+        "
+    }
+
+    intr I02 {
+        en = "
+        Let $A$ denote the greatest common divisor of the $M$
+        rational integers
+        $@(18) qquad A1 sup frac M! over 1;;,
+        A2 sup frac M! over 2;;, ddd,
+        AM sup frac M! over M;;$
+        "
+    }
+
+    intr I03 {
+        en = "
+        In the same way we associate GCDs $@B, C, ddd$ to every
+        other number $@beta, gamma, ddd$ in the ideal $@frJ$.
+        "
+    }
+
+    intr I04 {
+        en = "
+        Let $J$ denote the greatest common divisor
+        of all such numbers $@A, B, C, ddd$.
+        "
+    }
+
+    asrt A05 {
+        sy = "$@frJ sup M!; = J$."
+    }
+
+    asrt A06 {
+        en = "
+        The numbers conjugate to $@alp$ are
+        again elements of the ideal $@frJ$.
+        "
+    }
+
+    asrt A07 {
+        sy = "
+        $$@A1 equiv 0 pmod frJ;, A2 equiv 0 pmod frJ squ;, ddd,
+        AM equiv 0 pmod frJuuM;.$$
+        "
+    }
+
+    asrt A08 {
+        en = "
+        Each of the numbers in [(18)](I02)
+        is $@equiv 0 mod frJ sup M!;$
+        "
+    }
+
+    asrt A09 {
+        sy = "$@A equiv 0 mod frJ sup M!;$"
+    }
+
+    asrt A10 {
+        en = "The same is true of the numbers $@B, C, ddd$."
+    }
+
+    asrt A11 {
+        en = "$@J equiv 0 mod frJ sup M!;$"
+    }
+
+    asrt A12 {
+        en = "$@frJ sup M!;$ is divisible by $J$."
+    }
+
+    asrt A13 {
+        en = "
+        $@A1, A2, ddd, AM$ are divisible by
+        $@J sup frac 1 over M!;;, J sup frac 2 over M!;;, ddd,
+        J sup frac M over M!;;$,
+        respectively.
+        "
+    }
+
+    asrt A14 {
+        en = "$@alp$ is divisible by $@J sup frac 1 over M!;;$."
+    }
+
+    asrt A15 {
+        en = "
+        The same holds of all numbers $@beta, gamma, ddd$
+        in the ideal $@frJ$.
+        "
+    }
+
+    meson = "
+    Thm.I. Let I01. Let I02. Let I03. Let I04. Then A05.
+    Meanwhile A06 by Thm.I, so A07, so A08, so A09.
+    Next A10, so A11 by A09.
+    Meanwhile A13, so A14.
+    Next A15. Then A12, so A05 by A11.
+    Hence Thm.C.
+    "
+}

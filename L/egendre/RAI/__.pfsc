@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.L.egendre.RAI
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Axx, 11Dxx",
+    "journal": "HistAcadRoyaleSci",
+    "kind": "article",
+    "libpath": "lit.L.egendre.RAI",
+    "pages": {
+        "first": 465,
+        "last": 559
+    },
+    "source": [
+        "http://gallica.bnf.fr/ark:/12148/bpt6k35847/f649.image"
+    ],
+    "title": "Recherches d&#x27;analyse indéterminée",
+    "volume": 1785,
+    "year": 1785
+}'

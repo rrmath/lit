@@ -1,0 +1,95 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm8
+###############################################################################
+
+from .Lem2 import Thm as Lem2
+
+deduc Thm {
+
+    asrt C {
+        en = "
+        For any given ideal $@fra = (alp1, ddd, alpr)$,
+        an ideal $@frb$ can be found such that the product
+        $@fra frb$ is principal.
+        "
+    }
+
+    meson = "
+    C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    intr I1 {
+        en = "Define $@F(x) = alp1 xuur + alp2 xuur-1 + ccc$"
+    }
+
+    intr I2 {
+        en = "
+        Define $@F supp i;(x) = alp1 supp i; xuur + alp2 supp i;
+        xuur-1 + ccc$
+        for $@i = 1, ddd, m - 1$, where the $@alpk supp i;$ are
+        the conjugates of $@alpk$.
+        "
+    }
+
+    intr I3 {
+        en = "
+        Form $@R = prod over i from 1 to m - 1; F supp i;(x) =
+        beta1 + beta2 x + ccc$
+        "
+    }
+
+    asrt A4 {
+        en = "$@beta1, beta2, ddd$ are integers of the field $k$."
+    }
+
+    exin E5 {
+
+        en = "There exist % such that"
+
+        intr I1 {
+            sy = "$@n in bbZ$"
+        }
+
+        intr I2 {
+            sy = "$@U in bbZ[x]$"
+        }
+
+        asrt C1 {
+            en = "the coefficients of $U$ have no common divisor"
+        }
+
+        asrt C2 {
+            sy = "$@F R = n U$"
+        }
+    }
+
+    intr I6 {
+        en = "Let $@frb = (beta1, ddd, betas)$."
+    }
+
+    asrt A7 {
+        en = "$@n equiv 0 mod fra frb$"
+    }
+
+    asrt A8 {
+        en = "Each number $@alpi betah$ is divisible by $n$."
+    }
+
+    asrt A9 {
+        sy = "$@fra frb = n$"
+    }
+
+    meson = "
+    Let I1 and I2 and I3. Then A4.
+    E5. Let I6. A7 by E5.
+    But A8 by Lem2, so A9 by A7, hence Thm.C.
+    "
+}

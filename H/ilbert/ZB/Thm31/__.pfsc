@@ -1,0 +1,24 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm31
+###############################################################################
+
+deduc Thm {
+
+    asrt A {
+        en = "
+        The discriminant $d$ of the number field $k$
+        contains all and only those rational primes
+        as factors which are divisible by the square
+        of a prime ideal.
+        "
+    }
+
+    meson = "
+    A.
+    "
+}

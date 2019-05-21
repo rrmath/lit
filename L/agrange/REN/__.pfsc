@@ -1,0 +1,21 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.L.agrange.REN
+###############################################################################
+
+works = '
+{
+    "MSC2010": "12Dxx",
+    "kind": "book",
+    "libpath": "lit.L.agrange.REN",
+    "publisher": "Duprat",
+    "source": [
+        "https://archive.org/details/traitdelarso00lagr"
+    ],
+    "title": "Traité de la résolution des équations numériques de tous les degrés",
+    "year": 1798
+}'

@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 29, 
+        "month": 1, 
+        "year": 1810
+    }, 
+    "death": {
+        "day": 14, 
+        "month": 5, 
+        "year": 1893
+    }, 
+    "givenNames": "Ernst Eduard", 
+    "libpath": "lit.K.ummer",
+    "portrait": "Kummer.jpg", 
+    "surname": "Kummer"
+}'

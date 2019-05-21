@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.irichlet.Crelle19p324
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Mxx, 11Nxx",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.D.irichlet.Crelle19p324",
+    "pages": {
+        "first": 324,
+        "last": 369
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002142007"
+    ],
+    "title": "Recherches sur diverses applications de l&#x27;Analyse infinitésimale à la Théorie des Nombres",
+    "volume": 19,
+    "year": 1839
+}'
+
+

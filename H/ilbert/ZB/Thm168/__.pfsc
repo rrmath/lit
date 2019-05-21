@@ -1,0 +1,1098 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm168
+###############################################################################
+
+from .Thm127 import Thm as ZB127
+from .Thm156 import Thm as ZB156
+
+######################################################################
+# Theorem
+deduc Thm {
+
+    intr I1 {
+        en = "
+        Let $@ell$ be a regular prime.
+        "
+    }
+
+    intr I2 {
+        en = "
+        $@zeta = \mathrm{e} sup 2 i pie / ell;$,
+        $@alp, beta, gam$ nonzero integers of the field $@k(zeta)$.
+        "
+    }
+
+    asrt A {
+        en = "
+        The equation
+        (185) $@quad alp^ell + beta^ell + gam^ell = 0$
+        does not hold.
+        "
+    }
+
+    meson = "
+    Let I1, let I2. Then A.
+    "
+}
+
+######################################################################
+# Proof
+deduc Pf of Thm.A {
+
+    supp S {
+        en = "
+        Suppose [(185)](Thm.A) did have
+        a solution $@alp, beta, gam$.
+        "
+    }
+
+    subdeduc Cs1 {
+
+        supp S {
+            en = "
+            Suppose none of the three
+            integers $@alp, beta, gam$ is
+            divisible by $@frl$.
+            "
+        }
+
+        subdeduc Cs1A {
+
+            supp S {
+                sy = "$@ell = 3$"
+            }
+
+            flse F {}
+
+            meson = "
+            Suppose S. Then F.
+            "
+        }
+
+        subdeduc Cs1B {
+
+            supp S {
+                sy = "$@ell = 5$"
+            }
+
+            flse F {}
+
+            meson = "
+            Suppose S. Then F.
+            "
+        }
+
+        subdeduc Cs1C {
+
+            supp S {
+                sy = "$@ell geq 7$"
+            }
+
+            flse F {}
+
+            meson = "
+            Suppose S. Then F.
+            "
+        }
+
+        flse F {}
+
+        meson = "
+        F by Cs1A and Cs1B and Cs1C.
+        "
+    }
+
+    subdeduc Cs2 {
+
+        supp S {
+            en = "
+            Suppose at least one of the three
+            integers $@alp, beta, gam$ is
+            divisible by $@frl$.
+            "
+        }
+
+        flse F {}
+
+        meson = "
+        Suppose S. Then F.
+        "
+    }
+
+    flse F {}
+
+    meson = "
+    F by Cs1 and Cs2. Hence Thm.A.
+    "
+}
+
+######################################################################
+# Proof of Case1A
+deduc Pf1A of Pf.Cs1.Cs1A.F {
+
+    asrt A10 {
+        sy = "$@alp, beta, gam equiv \pm 1 mod frl$"
+    }
+
+    asrt A20 {
+        sy = "$@alp^3, beta^3, gam^3 equiv \pm 1 mod frl^3$"
+    }
+
+    asrt A30 {
+        en = "
+        $@alp^3 + beta^3 + gam^3 equiv
+        \pm 1$ or $@\pm 3 mod frl^3$
+        "
+    }
+
+    meson = "
+    From Pf.Cs1.S and Pf.Cs1.Cs1A.S get A10.
+    Then A20, so A30, hence Pf.Cs1.Cs1A.F.
+    "
+}
+
+######################################################################
+# Proof of Case1B
+deduc Pf1B of Pf.Cs1.Cs1B.F {
+
+    asrt A10 {
+        sy = "$@alp, beta, gam equiv \pm 1$ or $@\pm 2 mod frl$"
+    }
+
+    asrt A20 {
+        sy = "$@alp^5, beta^5, gam^5 equiv \pm 1$ or $@\pm 32 mod frl^5$"
+    }
+
+    mthd M30 {
+        en = "
+        [As in the case
+             $@ell = 3$](Pf1A.A30)
+        "
+    }
+
+    meson = "
+    From Pf.Cs1.S and Pf.Cs1.Cs1B.S get A10.
+    Then A20, hence Pf.Cs1.Cs1B.F, applying M30.
+    "
+}
+
+######################################################################
+# Proof of Case1C
+deduc Pf1C of Pf.Cs1.Cs1C.F {
+
+    asrt A10 {
+        en = "
+        May assume w.o.l.o.g. that
+        $@alp$, $@beta$, $@gam$ are semiprimary.
+        "
+    }
+
+    subdeduc D20 {
+
+        intr I {
+            en = "
+            Let $@alp star$, $@beta star$, $@gam star$ be the
+            products of $@alp$, $@beta$, $@gam$ with
+            any $@ell eth$ root of unity.
+            "
+        }
+
+        asrt A {
+            sy = "$@alp sup *ell; + beta sup *ell; + gam sup *ell; = 0$"
+        }
+
+        meson = "
+        Let I. Then A, by Pf.S.
+        "
+    }
+
+    asrt A30 {
+        sy = "
+        (186.) $@\quad (alp + beta) (alp + zeta beta) (alp + zeta^2 beta)
+            ccc (alp + zeta sup ell - 1; beta) = -gam sup ell;$
+        "
+    }
+
+    subdeduc D40 {
+
+        supp S10 {
+            en = "
+            Suppose two factors $@alp + zeta^u beta$ and
+            $@alp + zeta sup u + g; beta$ on the left-hand
+            side of [(186.)](Pf1C.A30) have a common factor.
+            "
+        }
+
+        asrt A20 {
+            en = "
+            The common factor must also divide
+            $@(zeta^g - 1) alp$ and $@(1 - zeta^g) beta$.
+            "
+        }
+
+        asrt A30 {
+            en = "
+            $@frac 1 - zeta^g over 1 - zeta;$ is a unit
+            "
+        }
+
+        asrt A40 {
+            en = "$@frl$ does not divide $@gam$"
+        }
+
+        asrt A50 {
+            en = "
+            The common factor must be a common factor
+            of the numbers $@alp$ and $@beta$.
+            "
+        }
+
+        meson = "
+        Suppose S10. Then A20.
+        From Pf.Cs1.S get A40,
+        so A50 by A20 and A30.
+        "
+    }
+
+    subdeduc D50 {
+
+        supp S10 {
+            en = "
+            Suppose a prime factor divides
+            precisely one of the $@ell$ factors
+            on the left-hand side of [(186.)](Pf1C.A30).
+            "
+        }
+
+        asrt A20 {
+            en = "
+            This prime factor must occur to an
+            exponent divisible by $@ell$.
+            "
+        }
+
+        meson = "
+        Suppose S10. Then A20 by Pf1C.A30.
+        "
+    }
+
+    intr I60 {
+        en = "
+        Let $@fra$ be the greatest common ideal
+        divisor of the number $@alp$, $@beta$.
+        "
+    }
+
+    exin E70 {
+
+        en = "There are % such that"
+
+        intr I10 {
+            en = "
+            ideals $@frj, frj1, frj2, ddd, frjell-1$ in $@bbQ(zeta)$
+            "
+        }
+
+        asrt A20 {
+            sy = "
+            $@alp + beta = frj^ell fra$
+            $@alp + zeta beta = frj1^ell fra$
+            $@alp + zeta^2 beta = frj2^ell fra$
+            $@ccc$
+            $@alp + zeta sup ell - 1; beta = frjell-1^ell fra$
+            "
+        }
+    }
+
+    asrt A80 {
+        en = "$@alp + zeta sup ell - 1; beta$ is prime to $@frl$"
+    }
+
+    exin E90 {
+
+        en = "We can determine % such that"
+
+        intr I10 {
+            en = "an $@ell eth$ root of unity $@zeta star$"
+        }
+
+        asrt A20 {
+            en = "
+            $@zeta star (alp + zeta sup ell - 1; beta)$ is semiprimary
+            "
+        }
+    }
+
+    intr I100 {
+        en = "
+        Let
+            $$@mew = frac alp over
+                zeta star (alp + zetauuell-1 beta);,
+            \quad
+            rho = frac beta over
+                zeta star (alp + zetauuell-1 beta);$$
+        "
+    }
+
+    asrt A110 {
+        sy = "
+        $@mew + rho = qnt frac frj over frjell-1;; sup ell$
+        $@mew + zeta rho = qnt frac frj1 over frjell-1;; sup ell$
+        $@ccc$
+        $@mew + zetauuell-2 rho = qnt frac frjell-2 over frjell-1;; sup ell$
+        "
+    }
+
+    asrt A120 {
+        sy = "
+        $@qnt frac frj over frjell-1;; sup ell; sim 1, \quad
+        qnt frac frj1 over frjell-1;; sup ell; sim 1, \quad,
+        ddd, \quad
+        qnt frac frjell-2 over frjell-1;; sup ell; sim 1$
+        "
+    }
+
+    asrt A130 {
+        sy = "$@mew + zetauuell-1 rho = zeta sup * - 1;$"
+    }
+
+    intr I140 {
+        en = "
+        Let $h$ be the number of ideal
+        classes in $@k(zeta)$.
+        "
+    }
+
+    asrt A150 {
+        sy = "
+        $@qnt frac frj over frjell-1;; sup h; sim 1, \quad
+        qnt frac frj1 over frjell-1;; sup h; sim 1, \quad,
+        ddd, \quad
+        qnt frac frjell-2 over frjell-1;; sup h; sim 1$
+        "
+    }
+
+    asrt A160 {
+        sy = "
+        $@frac frj over frjell-1; sim 1, \quad
+        frac frj1 over frjell-1; sim 1, \quad,
+        ddd, \quad
+        frac frjell-2 over frjell-1; sim 1$
+        "
+    }
+
+    exin E170 {
+
+        en = "For $@u = 0, 1, 2, ddd, ell - 2$ there are % such that"
+
+        intr I1 {
+            en = "a rational integer $@eu$"
+        }
+
+        intr I2 {
+            en = "a unit $@vepu$ in $@bbQ(zeta)$"
+        }
+
+        intr I3 {
+            en = "an element $@alpu in bbQ(zeta)$"
+        }
+
+        asrt A35 {
+            sy = "$@vepu in bbR$"
+        }
+
+        asrt A4 {
+            en = "
+            Numerator and denominator of
+            $@alpu$ are both prime to $@frl$.
+            "
+        }
+
+        asrt A5 {
+            sy = "$@mew + zeta^u rho = zeta^{eu} vepu alpu^ell$"
+        }
+    }
+
+    exin E180 {
+
+        en = "There is % such that"
+
+        intr I1 {
+            sy = "$@au in bbZ$"
+        }
+
+        asrt A2 {
+            sy = "$@alpu^ell equiv au mod frl^ell$"
+        }
+    }
+
+    asrt A190 {
+        sy = "$@mew + zeta^u rho equiv zeta^{eu} vepu au mod frl^ell$"
+    }
+
+    intr I200 {
+        en = "
+        Let $@mew', rho'$ be the images of $@mew, rho$
+        under the substitution $@zeta mapsto zeta inv$.
+        "
+    }
+
+    mthd M210 {
+        en = "
+        applying the
+        substitution $@zeta mapsto zeta inv$
+        "
+    }
+
+    asrt A220 {
+        sy = "$@mew' + zeta^{-u} rho' equiv zeta^{-eu} vepu au mod frl^ell$"
+    }
+
+    asrt A230 {
+        sy = "
+        $@mew + zeta^u rho equiv
+          zeta^{2eu} mew' + zeta^{2eu - u} rho' mod frl^ell$
+        "
+    }
+
+    exin E240 {
+
+        en = "There are % such that"
+
+        intr I10 {
+            sy = "$@m, r in bbZ$"
+        }
+
+        asrt A20 {
+            sy = "
+            $@mew equiv m mod frl^2$
+            $@rho equiv r mod frl^2$
+            "
+        }
+    }
+
+    asrt A250 {
+        sy = "
+        $@m + zeta^u r equiv
+          zeta^{2eu} m + zeta^{2eu - u} r mod frl^2$
+        "
+    }
+
+    asrt A260 {
+        en = "
+        For any positive integer $g$,
+        $@zeta^g equiv 1 - g lam mod frl^2$
+        "
+    }
+
+    asrt A270 {
+        sy = "$@2eu (m + r) equiv 2 r u mod ell$"
+    }
+
+    asrt A280 {
+        sy = "$@m + r equiv 1 mod ell$"
+    }
+
+    asrt A290 {
+        sy = "$@eu equiv r u mod ell$"
+    }
+
+    mthd M300 {
+        en = "
+        considering $@u = 0, 1, 2, 3$
+        and eliminating the numbers
+        $@mew, rho, mew', rho'$
+        "
+    }
+
+    asrt A310 {
+        sy = "
+        $$@
+                abs matrix 4 cols
+                1; 1; 1; 1;
+                1; zeta; zetauu2r; zetauu2r-1;
+                1; (zeta) squ; (zetauu2r) squ; (zetauu2r-1) squ;
+                1; (zeta)^3; (zetauu2r)^3; (zetauu2r-1)^3;
+                endmatrix;
+                equiv 0 mod frl^ell
+                $$
+        "
+    }
+
+    asrt A320 {
+        sy = "
+        $@(194.) \quad qnt 1 - zeta; qnt 1 - zetauu2r; qnt 1 - zetauu2r-1;
+         qnt zeta - zetauu2r; qnt zeta - zetauu2r-1;
+         qnt zetauu2r - zetauu2r-1;
+         equiv 0 mod frluuell$
+        "
+    }
+
+    subdeduc D330 {
+
+        supp S10 {
+            en = "
+            Suppose some factor on the left-hand side
+            of [(194.)](A320) were equal to $0$.
+            "
+        }
+
+        asrt A20 {
+            en = "
+            $r$ must be congruent to
+            $0$, $1$, or $@frac 1 over 2$ mod $@ell$.
+            "
+        }
+
+        subdeduc D30 {
+
+            supp S10 {
+                sy = "$@r equiv 0 mod ell$"
+            }
+
+            asrt A20 {
+                sy = "$@beta equiv 0 mod frl$"
+            }
+
+            flse F30 {}
+
+            meson = "
+            Suppose S10. Then A20, hence F30 since Pf.Cs1.S.
+            "
+        }
+
+        subdeduc D40 {
+
+            supp S10 {
+                sy = "$@r equiv 1 mod ell$"
+            }
+
+            asrt A20 {
+                sy = "$@rho equiv 1 mod frl$"
+            }
+
+            asrt A30 {
+                sy = "$@beta equiv alp + beta mod frl$"
+            }
+
+            asrt A40 {
+                sy = "$@alp equiv 0 mod frl$"
+            }
+
+            flse F50 {}
+
+            meson = "
+            Suppose S10.
+            Then A20, so A30, hence A40, so F50 since Pf.Cs1.S.
+            "
+        }
+
+        subdeduc D50 {
+
+            supp S10 {
+                sy = "$@r equiv frac 1 over 2; mod ell$"
+            }
+
+            asrt A20 {
+                sy = "$@rho equiv frac 1 over 2; mod frl$"
+            }
+
+            asrt A30 {
+                sy = "$@2beta equiv alp + beta mod frl$"
+            }
+
+            asrt A40 {
+                sy = "$@alp equiv beta mod frl$"
+            }
+
+            asrt A50 {
+                en = "
+                Equation [(185.)](Thm.A) is symmetric
+                in $@alp$, $@beta$, $@gam$.
+                "
+            }
+
+            mthd M60 {
+                en = "by the same reasoning"
+            }
+
+            asrt A70 {
+                sy = "$@alp equiv gam mod frl$"
+            }
+
+            asrt A80 {
+                sy = "
+                $@alp^ell + beta^ell + gam^ell equiv 3alp^ell
+                    equiv 0 mod frl$
+                "
+            }
+
+            asrt A90 {
+                sy = "$@alp equiv 0 mod frl$"
+            }
+
+            flse F100 {}
+
+            meson = "
+            Suppose S10.
+            Then A20, so A30, hence A40.
+            But A50, so A70 by A40, applying M60.
+            Then A80 by A40, hence A90, so F100 since Pf.Cs1.S.
+            "
+        }
+
+        flse F60 {}
+
+        asrt A70 {
+            en = "
+            No factor on the left-hand side
+            of [(194.)](A320) is equal to $0$.
+            "
+        }
+
+        meson = "
+        Suppose S10. Then A20.
+        Then F60 by D30 and D40 and D50.
+        Therefore A70.
+        "
+    }
+
+    asrt A340 {
+        en = "
+        Every factor on the left-hand side
+        of [(194.)](A320) is divisible by $@frl$ but not by $@frl squ$.
+        "
+    }
+
+    meson = "
+    A10 by D20.
+    Meanwhile A30 by Pf.S.
+    Let I60.
+    Then E70 by D40 and D50.
+    But A80 using A30 and Pf.Cs1.S, so E90.
+    Let I100.
+    Then A110 using E70.A20, so A120.
+    Meanwhile A130 by I100.
+    Let I140. Then A150 so A160 by A120 and Thm.I1.
+    Therefore E170 by A110 and ZB127.
+    From E180 get A190 using E170.A5.
+    Meanwhile let I200.
+    Then A220 by A190 and E170.A35, applying M210.
+    So A230 using A190.
+    But E240 since A10 and E90.A20,
+    hence A250 using A230.
+    Therefore A270 by A260.
+    From A130 get A280, so A290 using A270.
+    Therefore A310 using A230, applying M300, hence A320.
+    Now D330.
+    But A340 by D330.A70,
+    hence Pf.Cs1.Cs1C.F since A320 and Pf.Cs1.Cs1C.S.
+    "
+}
+
+######################################################################
+# Proof of Case2
+deduc Pf2 of Pf.Cs2.F {
+
+    supp S10 {
+        en = "
+        Without loss of generality,
+        suppose $@frl$ divides $@gam$ to precisely
+        the $@m > 0$ power.
+        "
+    }
+
+    exin E20 {
+
+        en = "There is % such that"
+
+        intr I10 {
+            en = "
+            an integer $@delta$ of $@bbQ(zeta)$,
+            relatively prime to $@frl$
+            "
+        }
+
+        asrt A20 {
+            sy = "$@gam = lam^m delta$"
+        }
+    }
+
+    wher W30 {
+
+        asrt A10 {
+            sy = "
+            $@(195.) \quad alp^ell + beta^ell =
+                vep lam sup ell m; delta^ell$
+            "
+        }
+
+        intr I20 {
+            sy = "$@vep = -1$"
+        }
+    }
+
+    subdeduc D40 {
+
+        supp S05 {
+            en = "
+            Suppose we have an equation of the form
+            [(195.)](Pf2.W30.A10), where $@alp$, $@beta$, $@delta$ are any integers
+            prime to $@frl$ and $@vep$ any unit of the field $@bbQ(zeta)$.
+            "
+        }
+
+        asrt A10 {
+            en = "
+            [As in the first case](Pf1C.A10), may assume w.o.l.o.g.
+            that $@alp$, $@beta$ are semiprimary.
+            "
+        }
+
+        asrt A20 {
+            en = "
+            $@alp^ell$ and $@beta^ell$ are congruent to
+            rational integers mod $@frluuell+1$.
+            "
+        }
+
+        asrt A30 {
+            en = "
+            $@vep lam sup m ell; delta^ell$ must be congruent
+            to a rational integer mod $@frluuell+1$.
+            "
+        }
+
+        asrt A40 {
+            sy = "$@m > 1$"
+        }
+
+        mthd M45 {
+            en = "
+            by a derivation like that
+            employed [in the first case](Pf1C.E70)
+            "
+        }
+
+        asrt A50 {
+            sy = "$@alp + beta$ is semiprimary"
+        }
+
+        exin E60 {
+
+            en = "There are % such that"
+
+            intr I10 {
+                en = "
+                ideals $@frj, frj1, ddd, frjell-1, fra$ of $@bbQ(zeta)$
+                "
+            }
+
+            asrt A20 {
+                en = "
+                $@frj, frj1, ddd, frjell-1, fra$ are
+                relatively prime to $@frl$
+                "
+            }
+
+            asrt A30 {
+                sy = "
+                $@alp + beta = lam^{ell(m - 1) + 1} frj^ell fra$
+                $@alp + zeta beta = lam frj1^ell fra$
+                $@ccc$
+                $@alp + zetauuell-1 beta = lam frjell-1^ell fra$
+                "
+            }
+        }
+
+        subdeduc D70 {
+
+            subdeduc D10 {
+
+                supp S10 {
+                    sy = "$@ell = 3$"
+                }
+
+                asrt A {
+                    sy = "[(200.)](Pf2.D40.D70.A30)"
+                }
+
+                meson = "
+                Suppose S10. Then A.
+                "
+            }
+
+            subdeduc D20 {
+
+                supp S10 {
+                    sy = "$@ell > 3$"
+                }
+
+                asrt A {
+                    sy = "[(200.)](Pf2.D40.D70.A30)"
+                }
+
+                meson = "
+                Suppose S10. Then A.
+                "
+            }
+
+            asrt A30 {
+                en = "
+                We get an equation of the form
+                (200.) $@\quad (alp star)^ell + eta (beta star)^ell
+                     = eta star lam sup ell (m - 1); (gam star)^ell$
+                where
+                    $@eta = - frac (1 - zeta) over (1 - zeta squ); vep$
+                and
+                    $@eta star =
+                     frac zeta (1 - zeta) over (1 - zeta squ); vep star$
+                are units in $@bbQ(zeta)$.
+                "
+            }
+
+            meson = "
+            A30 by D10 and D20.
+            "
+        }
+
+        asrt A90 {
+            en = "
+            $@alp^ell$ and $@beta^ell$ are congruent to
+            rational integers mod $@frluuell$.
+            "
+        }
+
+        asrt A100 {
+            en = "
+            $@eta$ must be congruent to a
+            rational integer mod $@frl^ell$.
+            "
+        }
+
+        asrt A110 {
+            en = "
+            $@eta$ is the $@ell eth$ power of
+            some unit in $@bbQ(zeta)$.
+            "
+        }
+
+        asrt A120 {
+            en = "
+            We may substitute $@beta star eta
+                                sup - frac 1 over ell;;$ for $@beta star$
+            in [(200.)](D70.A30), obtaining an equation
+            of the form of [(195.)](Pf2.W30.A10), only with the
+            exponent $m$ now smaller by $1$.
+            "
+        }
+
+        mthd M130 {
+            en = "
+            repeated application of
+            the same procedure
+            "
+        }
+
+        asrt A140 {
+            en = "
+            We obtain an equation of the
+            form of [(195.)](Pf2.W30.A10) with $@m = 1$.
+            "
+        }
+
+        asrt F990 {
+            sy = "[$@\bot$](S05)"
+        }
+
+        asrt A1000 {
+            en = "
+            An equation of the form [(195.)](Pf2.W30.A10) is
+            impossible, when $@alp$, $@beta$, $@delta$ are integers
+            prime to $@frl$ and $@vep$ a unit of the field $@bbQ(zeta)$.
+            "
+        }
+
+        meson = "
+        Suppose S05. But A10, so A20.
+        Then A30 by S05.
+        Implies A40.
+        From A10 get A50.
+        From Pf.S and A50 get E60, applying M45.
+        D70.
+        From A20 get A90, hence A100 by D70.A30 and A40.
+        Therefore A110 using ZB156.
+        Then A120. So A140, applying M130.
+        Hence F990. Therefore A1000.
+        "
+    }
+
+    meson = "
+    Pf.Cs2.S. Suppose S10.
+    Then E20, so W30 using Pf.S.
+    Then Pf.Cs2.F since D40.A1000.
+    "
+}
+
+######################################################################
+# Proof of Case2A
+deduc Pf2A of Pf2.D40.D70.D10.A {
+
+    asrt A10 {
+        en = "
+        The class number $h$ of the
+        field $@bbQ(zeta)$ is equal to $1$.
+        "
+    }
+
+    asrt A20 {
+        en = "
+        Every ideal in $@bbQ(zeta)$ is
+        a principal ideal.
+        "
+    }
+
+    exin E30 {
+
+        en = "There is % such that"
+
+        intr I10 {
+            en = "
+            an integer $@chi$ of
+            the field $@bbQ(zeta)$
+            "
+        }
+
+        asrt A20 {
+            sy = "$@fra = (chi)$"
+        }
+    }
+
+    intr I40 {
+        en = "
+        Let $@mew = frac alp over chi; \quad rho = frac beta over chi;$.
+        "
+    }
+
+    asrt A50 {
+        sy = "
+        $@mew + rho = lam sup 3(m - 1) + 1; frj^ell$
+        $@mew + zeta rho = lam frj1^ell$
+        $@mew + zeta squ rho = lam frj2^ell$
+        "
+    }
+
+    asrt A60 {
+        en = "
+        We get [a system of equations
+        like in the case $@ell > 3$.](Pf2B.E60.A30)
+        "
+    }
+
+    mthd M70 {
+        en = "
+        by elimination of $@mew$, $@rho$
+        "
+    }
+
+    meson = "
+    Pf2.D40.D70.D10.S10.
+    Then A10, so A20, hence E30.
+    Let I40. Then A50 using Pf2.D40.E60.A30.
+    Then A60, hence Pf2.D40.D70.D10.A, applying M70.
+    "
+}
+
+######################################################################
+# Proof of Case2B
+deduc Pf2B of Pf2.D40.D70.D20.A {
+
+    intr I10 {
+        en = "
+        Let
+          $@mew = frac alp lam over alp + zetauuell-1 beta;$
+          $@rho = frac beta lam over alp + zetauuell-1 beta;$
+        "
+    }
+
+    asrt A20 {
+        sy = "
+        $@mew + rho = lam sup ell(m - 1) + 1;
+                qnt frac frj over frjell-1; ;^ell$
+        $@mew + zeta rho = lam
+                qnt frac frj1 over frjell-1; ;^ell$
+        $@mew + zeta squ rho = lam
+                qnt frac frj2 over frjell-1; ;^ell$
+        "
+    }
+
+    mthd M30 {
+        en = "
+        using the three first and
+        the last of these equations
+        "
+    }
+
+    mthd M40 {
+        en = "
+        [as in the first case](Pf1C.A160)
+        "
+    }
+
+    asrt A50 {
+        sy = "
+        $@frac frj over frjell-1 ; sim 1, \quad
+         frac frj1 over frjell-1 ; sim 1, \quad
+         frac frj2 over frjell-1 ; sim 1$
+        "
+    }
+
+    exin E60 {
+
+        en = "There are % such that"
+
+        intr I10 {
+            en = "
+            integers $@new, alp star, beta star, gam star$
+            prime to $@frl$
+            "
+        }
+
+        intr I20 {
+            en = "
+            units $@vep$, $@vep star$ in $@bbQ(zeta)$
+            "
+        }
+
+        asrt A30 {
+            sy = "
+            $@mew + rho =
+              frac vep star lam sup ell(m - 1) + 1; gam^{*ell} over new;$
+            $@mew + zeta rho =
+              frac lam alp^{*ell} over new;$
+            $@mew + zeta squ rho =
+              frac vep lam beta^{*ell} over new;$
+            "
+        }
+    }
+
+    mthd M70 {
+        en = "
+        by elimination of $@mew$, $@rho$
+        "
+    }
+
+    meson = "
+    Let I10.
+    Then A20 by Pf2.D40.E60.A30 and Pf2.D40.D70.D20.S10,
+    applying M30.
+    So A50 by Thm.I1, applying M40.
+    Therefore E60, using A20.
+    Then Pf2.D40.D70.D20.A, applying M70.
+    "
+}

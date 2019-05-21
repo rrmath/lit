@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.L.agrange
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 25, 
+        "month": 1, 
+        "year": 1736
+    }, 
+    "death": {
+        "day": 10, 
+        "month": 4, 
+        "year": 1813
+    }, 
+    "givenNames": "Joseph-Louis", 
+    "libpath": "lit.L.agrange",
+    "portrait": "Lagrange.jpg", 
+    "surname": "Lagrange"
+}'
+
+

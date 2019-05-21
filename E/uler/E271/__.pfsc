@@ -1,0 +1,27 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.E.uler.E271
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11A07, 11A41",
+    "journal": "NoviCommAcadSciPetrop",
+    "kind": "article",
+    "libpath": "lit.E.uler.E271",
+    "pages": {
+        "first": 74,
+        "last": 104
+    },
+    "source": [
+        "http://eulerarchive.maa.org/pages/E271.html"
+    ],
+    "title": "Theoremata arithmetica nova methodo demonstrata",
+    "volume": 8,
+    "year": 1763
+}'
+

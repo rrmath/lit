@@ -1,0 +1,28 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.D.irichlet.Crelle18p259
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11Mxx, 11Nxx",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.D.irichlet.Crelle18p259",
+    "pages": {
+        "first": 259,
+        "last": 274
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN00214168X"
+    ],
+    "title": "Sur l&#x27;usage des séries infinies dans la théorie des nombres",
+    "volume": 18,
+    "year": 1838
+}'
+
+

@@ -1,0 +1,21 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.E.uler.E102
+###############################################################################
+
+work = '
+{
+    "MSC2010": "26-XX, 40-XX",
+    "kind": "book",
+    "libpath": "lit.E.uler.E102",
+    "source": [
+        "http://eulerarchive.maa.org/pages/E102.html"
+    ],
+    "title": "Introductio in analysin infinitorum, Vol. 2",
+    "year": 1748
+}'
+

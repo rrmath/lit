@@ -1,0 +1,312 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm5
+###############################################################################
+
+from .Thm4 import Thm as Thm4
+
+deduc Thm {
+
+    asrt C {
+
+        en = "
+        In a number field of degree $m$ there are always $m$
+        algebraic integers $@omega1, omega2, ddd, omegam$ such
+        that every other algebraic integer $@omega$ in the field
+        can be represented in the form
+        $@omega = a1 omega1 + a2 omega2 + ccc + am omegam$,
+        where $@a1, ddd, am$ are rational integers.
+        "
+
+        de = "
+        In einem Zahlkörper $m$ten Grades giebt es stets $m$
+        ganze Zahlen $@omega1, omega2, ddd, omegam$ von der
+        Beschaffenheit, dass jede andere ganze Zahl $@omega$
+        des Körpers sich in der Gestalt
+        $@omega = a1 omega1 + a2 omega2 + ccc + am omegam$
+        darstellen lässt, wo $@a1, ddd, am$ ganze rationale
+        Zahlen sind.
+        "
+    }
+
+    meson = "
+    C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    intr I1 {
+
+        en = "
+        Let $@alp$ be a primitive
+        element of the field.
+        "
+
+        de = "
+        Sei $@alp$ eine den Körper
+        bestimmende Zahl.
+        "
+    }
+
+    asrt A2 {
+
+        en = "
+        Every number $@omega$ can be
+        represented in the form
+        $@omega = r1 + r2 alp + ccc + rm alpuum-1$,
+        where $@r1, r2, ddd, rm$ are
+        rational numbers.
+        "
+
+        de = "
+        Jede Zahl $@omega$ ist in der Gestalt
+        $@omega = r1 + r2 alp + ccc + rm alpuum-1$
+        darstellbar, wo $@r1, r2, ddd, rm$ rationale
+        Zahlen sind.
+        "
+    }
+
+    mthd M3 {
+
+        en = "substitute conjugates"
+
+        de = "Übergang zu den conjugirten Zahlen"
+    }
+
+    asrt A4 {
+        sy = "
+        $@omega' = r1 + r2 alp' + ccc + rm alp' sup m - 1;$
+        $@vvv$
+        $@omega supp m - 1; = r1 + r2 alp supp m - 1; + ccc + rm qnt alp supp m - 1;; sup m - 1;$
+        "
+    }
+
+    unin U5 {
+
+        intr I5 {
+            sy = "$@s in set 1, 2, ddd, m;$"
+        }
+
+        rels R6 {
+
+            asrt A1 {
+                sy = "
+                 $@rs = frac abs 1, alp, ddd, omega, ddd, alpuum-1; over
+                 abs 1, alp, ddd, alpuus-1, ddd, alpuum-1;;$
+                 "
+            }
+
+            asrt A2 {
+                sy = "
+                 $@ = frac abs 1, alp, ddd, omega, ddd, alpuum-1;
+                 abs 1, alp, ddd, alpuus-1, ddd, alpuum-1; over
+                 abs 1, alp, ddd, alpuus-1, ddd, alpuum-1; squ;$
+                 "
+            }
+
+            intr I3 {
+                sy = "$@= frac As over d of alp;;$"
+            }
+        }
+    }
+
+    asrt A7 {
+
+        en = "
+        $@As$ is a polynomial in $@alp, alp', ddd, alp supp m - 1;$,
+        $@omega, omega', ddd, omega supp m - 1;$ with integer
+        coefficients.
+        "
+
+        de = "
+        $@As$ ist eine ganze ganzzahlige Function von
+        $@alp, alp', ddd, alp supp m - 1;$,
+        $@omega, omega', ddd, omega supp m - 1;$
+        "
+    }
+
+    asrt A8 {
+
+        en = "$@As$ is an algebraic integer."
+
+        de = "$@As$ ist eine ganze Zahl"
+    }
+
+    asrt A9 {
+        sy = "$@As = rs d(alp) in bbQ$"
+    }
+
+    asrt A10 {
+        sy = "$@As in bbZ$"
+    }
+
+    asrt A11 {
+
+        en = "
+        Every algebraic integer $@omega$ admits a representation
+        $@(1.) qquad omega = frac A1 + A2 alp + ccc + Am alpuum-1 over d(alp);$,
+        where $@A1, A2, ddd, Am$ are rational integers, and $@d(alp)$
+        is the discriminant of $@alp$.
+        "
+
+        de = "
+        Jede ganze Zahl $@omega$ gestattet die Darstellung
+        $@(1.) qquad omega = frac A1 + A2 alp + ccc + Am alpuum-1 over d(alp);$,
+        wo $@A1, A2, ddd, Am$ ganze rationale Zahlen sind und $@d(alp$
+        die Discriminante von $@alp$ bedeutet.
+        "
+    }
+
+    intr I12 {
+
+        en = "Let $@s in set 1, 2, ddd, m;$ be given."
+
+        de = "
+        Sei $s$ eine bestimmte
+        von den Zahlen $@1, 2, ddd, m$.
+        "
+    }
+
+    intr I13 {
+
+        en = "
+        Suppose we have all algebraic integers
+        of the field of the form
+        $@omegas = frac O1 + O2 alp + ccc + Os alpuus-1 over d(alp);$,
+        $@omegas supp 1; = frac O1 supp 1; + O2 supp 1; alp + ccc + Os supp 1; alpuus-1 over d(alp);$,
+        $@omegas supp 2; = frac O1 supp 2; + O2 supp 2; alp + ccc + Os supp 2; alpuus-1 over d(alp);$,
+        $@vvv$
+        where the coefficients $@O, O supp 1;, O supp 2;, ddd$
+        are in $@bbZ$.
+        "
+
+        de = "
+        Wir denken uns alle ganzen Zahlen des Körpers
+        von der Gestalt
+        $@omegas = frac O1 + O2 alp + ccc + Os alpuus-1 over d(alp);$,
+        $@omegas supp 1; = frac O1 supp 1; + O2 supp 1; alp + ccc + Os supp 1; alpuus-1 over d(alp);$,
+        $@omegas supp 2; = frac O1 supp 2; + O2 supp 2; alp + ccc + Os supp 2; alpuus-1 over d(alp);$,
+        $@vvv$
+        berechnet, wo die Coefficienten $@O, O supp 1;, O supp 2;, ddd$
+        sämtlich ganze rationale Zahlen sind.
+        "
+    }
+
+    supp S14 {
+
+        en = "
+        Assume, without loss of generality, that
+        $@Os neq 0$ and is the greatest common divisor
+        of all the numbers $@Os, Os supp 1;, Os supp 2;, ddd$.
+        "
+
+        de = "
+        Wir können annehmen, dass etwa $@Os neq 0$ und der
+        grösste gemeinsame Teiler der sämtlichen Zahlen
+        $@Os, Os supp 1;, Os supp 2;, ddd$ ist.
+        "
+    }
+
+    asrt A15 {
+
+        en = "
+        The $m$ first numbers $@omega1, ddd, omegam$ form
+        a system of the kind sought.
+        "
+
+        de = "
+        Die $m$ ersten Zahlen $@omega1, ddd, omegam$ bilden
+        ein System von der verlangten Beschaffenheit.
+        "
+    }
+
+    subdeduc SbPf {
+
+        intr I16 {
+
+            en = "
+            Let $@omega$ be an arbitrary integer
+            given in the form (1.).
+            "
+
+            de = "
+            Sei $@omega$ eine beliebige ganze Zahl
+            in der Gestalt (1.).
+            "
+        }
+
+        exin E17 {
+
+            intr I1 {
+                sy = "$@am in bbZ$"
+            }
+
+            asrt A2 {
+                sy = "$@Am = am Om$"
+            }
+        }
+
+        intr I18 {
+
+            en = "Let $@omega star = omega - am omegam.$"
+
+            de = "Sei $@omega star = omega - am omegam.$"
+        }
+
+        asrt A19 {
+
+            en = "
+            $@omega star$ is of the form
+            $@omega star = frac A1 star + A2 star alp + ccc + Am-1 star alpuum-2 over d(alp);$
+            "
+
+            de = "
+            $@omega star$ ist von der Gestalt
+            $@omega star = frac A1 star + A2 star alp + ccc + Am-1 star alpuum-2 over d(alp);$
+            "
+        }
+
+        exin E20 {
+
+            intr I1 {
+                sy = "$@am-1 in bbZ$"
+            }
+
+            asrt A2 {
+                sy = "$@Am-1 star = am-1 Om-1$"
+            }
+        }
+
+        mthd M21 {
+
+            en = "
+            Consider the difference $@omega^{**} = omega star - am-1 omegam-1$
+            and continue this process.
+            "
+
+            de = "
+            die Betrachtung der Differenz $@omega^{**} = omega star - am-1 omegam-1$
+            und die Fortsetzung dieser Schlussweise
+            "
+        }
+
+        meson = "
+        Let I16. Now E17 by S14. Let I18. Then A19.
+        Next E20. Then A15, applying M21.
+        "
+    }
+
+    meson = "
+    Let I1. Then A2. So A4 applying M3. Now U5.
+    But A7, so A8.
+    From U5.R6.I3 get A9, so A10 by A8 and Thm4.
+    Therefore A11, using A2 and U5.R6.
+    Now let I12 and I13 and S14.
+    Next A15, hence Thm.C.
+    "
+}

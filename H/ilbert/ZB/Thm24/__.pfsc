@@ -1,0 +1,23 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm24
+###############################################################################
+
+deduc Thm {
+
+    asrt A {
+        en = "
+        Every algebraic integer $@omega$ prime to
+        an ideal $@fra$ satisfies the congruence
+                     $@omega sup vphi(fra); equiv 1 mod fra$.
+        "
+    }
+
+    meson = "
+    A.
+    "
+}

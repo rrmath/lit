@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.G.auss
+###############################################################################
+
+author = '
+{
+    "birth": {
+        "day": 30, 
+        "month": 4, 
+        "year": 1777
+    }, 
+    "death": {
+        "day": 23, 
+        "month": 2, 
+        "year": 1855
+    }, 
+    "givenNames": "Carl Friedrich", 
+    "libpath": "lit.G.auss",
+    "portrait": "Gauss_6.jpg", 
+    "surname": "Gauss"
+}'

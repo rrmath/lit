@@ -1,0 +1,27 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ronecker.GZ
+###############################################################################
+
+works = '
+{
+    "MSC2010": "11E99, 11R04",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.K.ronecker.GZ",
+    "nickname": "The Grundzüge",
+    "pages": {
+        "first": 1,
+        "last": 122
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN00215823X"
+    ],
+    "title": "Grundzüge einer arithmetischen Theorie der algebraischen Grössen",
+    "volume": 92,
+    "year": 1882
+}'

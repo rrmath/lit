@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.J.acobi.Crelle19p314
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11A15, 11Rxx",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.J.acobi.Crelle19p314",
+    "pages": {
+        "first": 314,
+        "last": 318
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002141981"
+    ],
+    "title": "Ueber die complexen Primzahlen, welche in der Theorie der Reste der 5ten, 8ten und 12ten Potenzen zu betrachten sind",
+    "volume": 19,
+    "year": 1839
+}'

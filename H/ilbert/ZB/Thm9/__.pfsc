@@ -1,0 +1,65 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm9
+###############################################################################
+
+from .Thm8 import Thm as Thm8
+
+deduc Thm {
+
+    supp P1 {
+        en = "
+        Three ideals $@fra$, $@frb$, $@frc$ satisfy the
+        equation $@fra frc = frb frc$.
+        "
+    }
+
+    supp P2 {
+        sy = "$@frc neq 0$"
+    }
+
+    asrt C {
+        sy = "$@fra = frb$"
+    }
+
+    meson = "
+    Suppose P1 and P2. Then C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    exin E1 {
+
+        en = "$@exists$ % such that"
+
+        intr I1 {
+            en = "an ideal $@frm$"
+        }
+
+        intr I2 {
+            en = "a nonzero algebraic integer $@alp$"
+        }
+
+        asrt A1 {
+            sy = "$@frc frm = (alp)$"
+        }
+    }
+
+    asrt A2 {
+        sy = "$@fra frc frm = frb frc frm$"
+    }
+
+    asrt A3 {
+        sy = "$@alp fra = alp frb$"
+    }
+
+    meson = "
+    E1 by Thm.P2 and Thm8. Now A2, by Thm.P1.
+    So A3 by E1.A1, hence Thm.C, using E1.I2.
+    "
+}

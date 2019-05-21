@@ -1,0 +1,57 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm67
+###############################################################################
+
+from .Lem11 import Thm as Lem11
+
+deduc Thm {
+
+    intr I {
+        en = "
+        Let $K$ be a Galois field,
+        $@frA$ an ideal of $K$.
+        "
+    }
+
+    asrt C {
+        en = "
+        An ideal $@frB$ can always
+        be found, such that the
+        product $@frA frB$ is a
+        prinicpal ideal.
+        "
+    }
+
+    meson = "
+    Let I. Then C.
+    "
+}
+
+deduc Pf of Thm.C {
+
+    intr I00 {
+        en = "Let $@frJ = frA s2 frA ccc sM frA$."
+    }
+
+    asrt A01 {
+        en = "$@frJ$ is an invariant ideal."
+    }
+
+    intr I02 {
+        en = "Let $@frB = frJ sup M! - 1; s2 frA ccc sM frA$."
+    }
+
+    asrt A03 {
+        en = "$@frA frB$ is principal"
+    }
+
+    meson = "
+    Let I00. Then A01.
+    Now let I02. Then A03 by A01 and Thm.I and Lem11, so Thm.C.
+    "
+}

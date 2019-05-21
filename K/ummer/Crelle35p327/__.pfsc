@@ -1,0 +1,26 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer.Crelle35p327
+###############################################################################
+
+work = '
+{
+    "MSC2010": "11R18",
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.K.ummer.Crelle35p327",
+    "pages": {
+        "first": 327,
+        "last": 367
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002146053"
+    ],
+    "title": "Über die Zerlegung der aus Wurzeln der Einheit gebildeten complexen Zahlen in ihre Primfactoren",
+    "volume": 35,
+    "year": 1847
+}'
