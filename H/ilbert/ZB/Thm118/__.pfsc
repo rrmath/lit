@@ -69,8 +69,13 @@ deduc Pf1 of Thm.C1 {
         "
     }
 
-    asrt A6 {
-        sy = "$@d(zeta) = (-1) sup frac (ell - 1)(ell - 2) over 2;; n(delta) = (-1) sup frac ell - 1 over 2;; elluuell-2$"
+    rels R6 {
+        asrt A1 {
+            sy = "$@d(zeta) = (-1) sup frac (ell - 1)(ell - 2) over 2;; n(delta)$"
+        }
+        asrt A2 {
+            sy = "$@= (-1) sup frac ell - 1 over 2;; elluuell-2$"
+        }
     }
 
     intr I7 {
@@ -174,7 +179,7 @@ deduc Pf1 of Thm.C1 {
 
     meson = "
     Thm.I0. Now A1. But A2, so A3. Therefore A4, using A1.
-    Now let I5. Then A6, by A4 and RemarkOnP180.
+    Now let I5. Then R6, by A4 and RemarkOnP180.
     Now let I7. Then E9 by A8 and Thm5Pf.A11.
     Then A11 by SbPf, hence Thm.C1.
     "
@@ -191,6 +196,6 @@ deduc Pf2 of Thm.C2 {
 
     meson = "
     A1 by Thm.C1.
-    Then Thm.C2, by Pf1.A6.
+    Then Thm.C2, by Pf1.R6.
     "
 }
