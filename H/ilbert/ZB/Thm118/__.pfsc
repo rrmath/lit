@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm118
 ###############################################################################
 
-from .Pg180L1 import Thm as RemarkOnP180
+from .Pg180L1 import Rem as RemarkOnP180
 from .Thm5 import Pf as Thm5Pf
 
 deduc Thm {

@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Pg180L1
 ###############################################################################
 
-deduc Thm {
+deduc Rem {
 
     intr I0 {
         en = "
