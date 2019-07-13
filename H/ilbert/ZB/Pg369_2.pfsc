@@ -1,0 +1,53 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Pg369_2
+###############################################################################
+
+deduc Thm {
+    intr I {
+        sy="Let $@alp in bbZ[zet]$."
+    }
+    supp S {
+        sy="$@frl not mid alp$"
+    }
+    exin E {
+        intr I {
+            sy="$@r in bbZ$"
+        }
+        asrt A {
+            en="
+            $@zetuur alp$ is semiprimary.
+            "
+        }
+    }
+    meson="Let I. Suppose S. Then E."
+}
+
+deduc Pf of Thm.E {
+    intr I10 {
+        en="
+        Write
+            $@alp equiv a + b qnt 1 - zet; mod frl squ$
+        where $a$ and $b$ are rational integers.
+        "
+    }
+    exin E20 {
+        intr I {
+            sy="$@b star in bbZ$"
+        }
+        asrt A {
+        sy="$@a b star equiv b mod ell$"
+        }
+    }
+    asrt A30 {
+        sy="$@zet sup b star; alp equiv a mod frl squ$"
+    }
+    asrt A40 {
+        en="$@zet sup b star; alp$ is semiprimary."
+    }
+    meson="Let I10. Now E20 by Thm.S. Then A30, so A40. Hence Thm.E."
+}

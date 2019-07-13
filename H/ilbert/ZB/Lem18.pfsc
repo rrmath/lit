@@ -1,0 +1,56 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Lem18
+###############################################################################
+
+deduc Lem {
+    intr I {
+        en="
+        Let $@C1$ be a cyclic number field
+        of odd prime degree $u$."
+    }
+    supp S {
+        en="
+        Suppose the discriminant of $@C1$ is
+        divisible by no prime other than $u$."
+    }
+    asrt C {
+        sy="$@C1 = U1$"
+    }
+    meson="Let I. Suppose S. Then C."
+}
+
+deduc Pf of Lem.C {
+    intr I10 {
+        en="
+        Let $@zet = rme sup frac 2 i pie over u;;$.
+        Let $r$ be a primitive root mod $u$.
+        Let $s$ be the substitution $@qnt zet : zetuur;$.
+        Let $@lam = 1 - zet$.
+        Let $@frl = qnt lam;$.
+        "
+    }
+    asrt A20 {
+        en="$@frl$ is a prime ideal in $@bbZ[zet]$"
+    }
+    asrt A30 {
+        en="
+        Have
+            $@u = frluuu-1$
+        in the ideal-theoretic sense.
+        "
+    }
+    asrt A40 {
+        sy="$@s lam = 1 - zetuur equiv r lam mod frl squ$"
+    }
+    
+    meson="
+    Let I10. Then A20 and A30 and A40.
+    !
+    Lem.C
+    "
+}
