@@ -9,6 +9,7 @@
 
 from .Thm127 import Thm as ZB127
 from .Thm156 import Thm as ZB156
+from .Pg369_2 import Thm as ZBPg369_2
 
 ######################################################################
 # Theorem
@@ -670,7 +671,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
     }
 
     meson = "
-    A10 by D20.
+    A10 by D20 and ZBPg369_2.
     Meanwhile A30 by Pf.S.
     Let I60.
     Then E70 by D40 and D50.
