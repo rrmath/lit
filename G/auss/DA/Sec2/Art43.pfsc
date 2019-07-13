@@ -1,0 +1,38 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.G.auss.DA.Sec3.Art43
+###############################################################################
+
+deduc Thm {
+    
+    intr I {
+        en="
+        Let $p$ be a prime number,
+        $m$ be a positive integer,
+        and $@A, B, C, ddd, M, N$ integers
+        such that $p$ does not divide $A$.
+        "
+    }
+    
+    asrt C {
+        en="
+        The congruence
+         $$@Ax^m + Bxuum-1 + Cxuum-2 + ccc + Mx + N equiv 0 mod p$
+        cannot have more than $m$ incongruent roots mod $p$.
+        "
+    }
+    
+    meson="Let I. Then C."
+}
+
+deduc Pf of Thm.C {
+    
+    meson="
+    !
+    Thm.C
+    "
+}

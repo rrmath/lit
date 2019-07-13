@@ -1,0 +1,81 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.G.auss.DA.Sec3.Art53
+###############################################################################
+
+from gh.rrmath.lit.G.auss.DA.Sec2.Art43 import Thm as ThmArt43
+
+deduc Thm {
+    
+    intr I {
+        en="
+        Let $p$ be a prime number.
+        For any divisor $d$ of $p - 1$ (including 1 and $p - 1$ itself),
+        let $@psi d$ be the number of nonzero residues mod $p$ that are
+        of order $d$.
+        Let $@phi d$ be as defined in Art. 39 (the Euler totient function).
+        "
+    }
+    
+    asrt C {
+        sy="$@psi d = phi d$"
+    }
+    
+    meson="Let I. Then C."
+}
+
+deduc Pf of Thm.C {
+    
+    supp S10 {
+        en="
+        Suppose we have a number $a$
+        of order $d$.
+        "
+    }
+    
+    asrt A20 {
+        en="
+        Each of the powers $@a^2, a^3, a^4, ddd, a^d$ also
+        has the property that its $@d eth$ power is congruent
+        to unity mod $p$.
+        "
+    }
+    
+    asrt A30 {
+        en="
+        Equivalently, the least residues of the numbers
+        $@a, a^2, a^3, ddd, a^d$, which are all distinct,
+        are solutions of the congruence $@x^d equiv 1$.
+        "
+    }
+    
+    asrt A40 {
+        en="
+        All residues mod $p$ of order $d$ must be among
+        the least residues of $@a, a^2, a^3, ddd, a^d$.
+        "
+    }
+    
+    meson="
+    Suppose S10. Then A20. So A30.
+    Therefore A40, by ThmArt43.
+    !
+    Thm.C
+    "
+}
+
+
+
+
+
+
+
+
+
+
+
+
