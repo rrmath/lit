@@ -1,0 +1,21 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer.Cr035_16.Pg356_18
+###############################################################################
+
+deduc Thm {
+    
+    asrt C {
+        en="
+        The class number is always a multiple of the
+        least power to which an ideal need be raised
+        in order to become principal.
+        "
+    }
+    
+    meson="C"
+}

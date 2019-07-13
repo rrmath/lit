@@ -4,23 +4,27 @@
 # International License (CC BY-SA 4.0):
 #   https://creativecommons.org/licenses/by-sa/4.0/
 # Attribution may be made through hyperlink to the following URL:
-#   https://royalroadmath.org/Module/lit.K.ummer.Crelle44p93
+#   https://royalroadmath.org/Module/lit.K.ummer.Cr035_16
 ###############################################################################
+
+import gh.rrmath.lit.K.ummer.Cr035_16.Pg356_18 as Pg356_18
 
 work = '
 {
-    "MSC2010": "11A15, 11Rxx",
+    "MSC2010": "11R18",
     "journal": "Crelle",
     "kind": "article",
-    "libpath": "lit.K.ummer.Crelle44p93",
+    "libpath": "lit.K.ummer.Cr035_16",
     "pages": {
-        "first": 93,
-        "last": 146
+        "first": 327,
+        "last": 367
     },
     "source": [
-        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002147432"
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002146053"
     ],
-    "title": "Über die Ergänzungssätze zu den allgemeinen Reciprocitätsgesetzen",
-    "volume": 44,
-    "year": 1852
+    "title": "Über die Zerlegung der aus Wurzeln der Einheit gebildeten complexen Zahlen in ihre Primfactoren",
+    "volume": 35,
+    "year": 1847
 }'
+
+

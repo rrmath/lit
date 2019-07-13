@@ -1,0 +1,110 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer.Cr040_08
+###############################################################################
+
+import gh.rrmath.lit.K.ummer.Cr035_16 as Cr035_16
+from . import Cr040_07
+
+work = '
+{
+    "journal": "Crelle",
+    "kind": "article",
+    "libpath": "lit.K.ummer.Cr040_08",
+    "pages": {
+        "first": 130,
+        "last": 146
+    },
+    "source": [
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002146738"
+    ],
+    "title": "Allgemeiner Beweis des Fermatschen Satzes...",
+    "volume": 40,
+    "year": 1850
+}'
+
+deduc Thm {
+    
+    intr I {
+        en="
+        Let $@lam$ be a prime number.
+        Let $@alp$ be an imaginary root of
+        the equation $@alpuulam = 1$.
+        Let $@u, v, w in bbQ(alp)$.
+        "
+        
+        note="
+        While we have stayed true to Kummer's way of defining $@alp$ (see e.g. Cr035_16),
+        we have modernized the definition of $u, v, w$. Kummer would describe these as
+        \"complex numbers formed from $@lam eth$ roots of unity\".
+        "
+    }
+    
+    supp S {
+        en="
+        Suppose $@lam$ does not divide the numerator
+        of any of the first $@(lam - 3)/2$ Bernoulli
+        numbers.
+        "
+    }
+    
+    asrt C {
+        en="
+        The equation
+            $@uuulam + vuulam + wuulam = 0$
+        is impossible.
+        "
+    }
+    
+    meson="Let I. Suppose S. Then C."
+}
+
+deduc Pf of Thm.C {
+    
+    asrt A10 {
+        en="
+        The class number of $@bbQ(alp)$
+        is not divisible by $@lam$.
+        "
+    }
+    
+    asrt A20 {
+        en="
+        The $@lam eth$ power of a non-principal
+        ideal is never principal.
+        "
+    }
+    
+    asrt A30 {
+        en="
+        Any unit in $@bbZ[alp]$ that is congruent
+        mod $@lam$ to a rational integer is the
+        $@lam eth$ power of another unit.
+        "
+    }
+    
+    
+    meson="
+    From Thm.S and Cr040_07.Pg127_30 get A10. Hence A20, using Cr035_16.Pg356_18.Thm.
+    From Cr040_07.Pg128_26 get A30.
+    !
+    Thm.C
+    "
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
