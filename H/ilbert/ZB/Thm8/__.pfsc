@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm8
 ###############################################################################
 
-from .Lem2 import Thm as Lem2
+from ..Lem2 import Thm as Lem2
 
 deduc Thm {
 

@@ -8,7 +8,7 @@
 ###############################################################################
 
 import gh.rrmath.lit.K.ummer.Cr035_16 as Cr035_16
-from . import Cr040_07
+from .. import Cr040_07
 
 work = '
 {

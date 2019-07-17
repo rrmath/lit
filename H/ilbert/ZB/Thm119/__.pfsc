@@ -7,11 +7,11 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm119
 ###############################################################################
 
-from .Thm24 import Thm as Thm24
-from .Thm26 import Thm as Thm26
-from .Thm31 import Thm as Thm31
-from .Thm117 import Pf as Pf117
-from .Thm118 import Thm as Thm118
+from ..Thm24 import Thm as Thm24
+from ..Thm26 import Thm as Thm26
+from ..Thm31 import Thm as Thm31
+from ..Thm117 import Pf as Pf117
+from ..Thm118 import Thm as Thm118
 
 deduc Thm {
 

@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm67
 ###############################################################################
 
-from .Lem11 import Thm as Lem11
+from ..Lem11 import Thm as Lem11
 
 deduc Thm {
 

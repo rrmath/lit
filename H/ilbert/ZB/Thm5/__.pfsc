@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm5
 ###############################################################################
 
-from .Thm4 import Thm as Thm4
+from ..Thm4 import Thm as Thm4
 
 deduc Thm {
 

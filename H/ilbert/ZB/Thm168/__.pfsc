@@ -7,9 +7,9 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm168
 ###############################################################################
 
-from .Thm127 import Thm as ZB127
-from .Thm156 import Thm as ZB156
-from .Pg369_2 import Thm as ZBPg369_2
+from ..Thm127 import Thm as ZB127
+from ..Thm156 import Thm as ZB156
+from ..Pg369_2 import Thm as ZBPg369_2
 
 ######################################################################
 # Theorem

@@ -7,7 +7,7 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm117
 ###############################################################################
 
-from .Thm33 import Thm as Thm33
+from ..Thm33 import Thm as Thm33
 
 deduc Thm {
 
