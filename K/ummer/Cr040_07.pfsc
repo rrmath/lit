@@ -25,7 +25,12 @@ work = '
     "signed_date": [18, 6, 1849]
 }'
 
+defn d_lam "$@lam$" "a prime number"
+defn d_alp "$@alp$" "an imaginary root of the equation $@alpuulam = 1$"
+
 deduc Pg127_25 {
+    
+    rdefs = "d_lam"
     
     asrt C {
         en="
@@ -40,13 +45,7 @@ deduc Pg127_25 {
 
 deduc Pg127_30 {
     
-    intr I {
-        en="
-        Let $@lam$ be a prime number.
-        Let $@alp$ be an imaginary root of
-        the equation $@alpuulam = 1$.
-        "
-    }
+    rdefs = "d_lam, d_alp"
     
     asrt C {
         en="
@@ -57,16 +56,15 @@ deduc Pg127_30 {
         "
     }
     
-    meson="Let I. Then C."
+    meson="C"
 }
 
 deduc Pg128_26 {
     
+    rdefs = "d_lam, d_alp"
+    
     intr I {
         en="
-        Let $@lam$ be a prime number.
-        Let $@alp$ be an imaginary root of
-          the equation $@alpuulam = 1$.
         Let $@E(alp) in bbZ[alp]$ be a unit.
         "
     }
