@@ -7,8 +7,7 @@
 #   https://royalroadmath.org/Module/lit.K.ummer.Cr040_08
 ###############################################################################
 
-import gh.rrmath.lit.K.ummer.Cr035_16 as Cr035_16
-from .. import Cr040_07
+from .. import Cr035_16, Cr040_07
 
 work = '
 {
@@ -24,7 +23,8 @@ work = '
     ],
     "title": "Allgemeiner Beweis des Fermatschen Satzes...",
     "volume": 40,
-    "year": 1850
+    "year": 1850,
+    "signed_date": [19, 6, 1849]
 }'
 
 deduc Thm {

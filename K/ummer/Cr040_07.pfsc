@@ -13,13 +13,13 @@ work = '
     "kind": "article",
     "libpath": "lit.K.ummer.Cr040_07",
     "pages": {
-        "first": 130,
-        "last": 146
+        "first": 117,
+        "last": 129
     },
     "source": [
-        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN002146738"
+        "http://www.digizeitschriften.de/dms/img/?PID=GDZPPN00214672X"
     ],
-    "title": "Allgemeiner Beweis des Fermatschen Satzes...",
+    "title": "Zwei besondere Untersuchungen über die Classen-Anzahl...",
     "volume": 40,
     "year": 1850,
     "signed_date": [18, 6, 1849]
