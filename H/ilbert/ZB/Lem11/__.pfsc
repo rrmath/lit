@@ -7,7 +7,11 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Lem11
 ###############################################################################
 
+from ..rdefs import *
+
 deduc Thm {
+    
+    rdefs="d_Kgal, d_M"
 
     intr I {
         en = "Let $@frJ$ be an invariant ideal of the Galois field $K$."

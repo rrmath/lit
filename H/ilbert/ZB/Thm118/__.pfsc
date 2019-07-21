@@ -9,12 +9,15 @@
 
 from ..Pg180L1 import Rem as RemarkOnP180
 from ..Thm5 import Pf as Thm5Pf
+from ..rdefs import *
 
 deduc Thm {
+    
+    rdefs="d_ell"
 
     intr I0 {
         en = "
-        Let $@zeta = e sup 2 i pie / ell;$,
+        Let $@zeta = rme sup 2 i pie / ell;$,
         $@k = bbQ(zeta)$.
         "
     }
@@ -40,6 +43,8 @@ deduc Thm {
 }
 
 deduc Pf1 of Thm.C1 {
+    
+    rdefs="d_Fzeta, d_lam"
 
     asrt A1 {
         en = "

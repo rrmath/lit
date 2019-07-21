@@ -7,7 +7,11 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Pg180L1
 ###############################################################################
 
+from ..rdefs import *
+
 deduc Rem {
+    
+    rdefs="d_k, d_m, d_alp"
 
     intr I0 {
         en = "

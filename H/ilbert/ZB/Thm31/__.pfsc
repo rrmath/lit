@@ -7,7 +7,11 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm31
 ###############################################################################
 
+from ..rdefs import *
+
 deduc Thm {
+    
+    rdefs = "d_k"
 
     asrt A {
         en = "

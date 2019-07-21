@@ -8,8 +8,11 @@
 ###############################################################################
 
 from ..Lem2 import Thm as Lem2
+from .. rdefs import *
 
 deduc Thm {
+    
+    rdefs="d_k, d_m"
 
     asrt C {
         en = "

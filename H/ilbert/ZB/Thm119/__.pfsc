@@ -12,8 +12,11 @@ from ..Thm26 import Thm as Thm26
 from ..Thm31 import Thm as Thm31
 from ..Thm117 import Pf as Pf117
 from ..Thm118 import Thm as Thm118
+from ..rdefs import *
 
 deduc Thm {
+    
+    rdefs="d_ell, d_zeta, d_kcyclo"
 
     intr I1 {
         en = "
