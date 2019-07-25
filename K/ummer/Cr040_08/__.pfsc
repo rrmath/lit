@@ -87,12 +87,56 @@ deduc Pf of Thm.C {
         "
     }
     
+    supp S40 {
+        en="
+        Suppose the equation
+            $@uuulam + vuulam + wuulam = 0$
+        did have a solution in complex
+        numbers $u, v, w$.
+        "
+    }
+    
+    supp S50 {
+        en="
+        Assume wolog that $u, v, w$ do not all three
+        have a common factor, and that therefore nor
+        do any two of these have a common factor.
+        "
+    }
+    
+    subdeduc Cs1 {
+        supp S {
+            en="
+            Suppose none of the three complex
+            numbers $u, v, w$ is divisible
+            by $@1 - alp$.
+            "
+        }
+        flse F {}
+        meson="Suppose S. Then F."
+    }
+    
+    subdeduc Cs2 {
+        supp S {
+            en="
+            Suppose exactly one of the three
+            complex numbers $u, v, w$ is divisible
+            by $@1 - alp$.
+            "
+        }
+        flse F {}
+        meson="Suppose S. Then F."
+    }
+    
+    flse F {}
     
     meson="
     From Thm.S and Cr040_07.Pg127_30 get A10. Hence A20, using Cr035_16.Pg356_18.Thm.
-    From Cr040_07.Pg128_26 get A30.
-    !
-    Thm.C
+    From Thm.S and Cr040_07.Pg128_26 get A30.
+    Now suppose S40. Next suppose S50.
+    Next Cs1.
+    Then F, using Cs2.
+    Therefore Thm.C.
     "
 }
 
