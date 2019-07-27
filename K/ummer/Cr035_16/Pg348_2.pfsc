@@ -1,0 +1,19 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.K.ummer.Cr035_16.Pg348_2
+###############################################################################
+
+deduc Thm {
+    asrt C {
+        en="
+        Two complex numbers that have exactly the same
+        (ideal) prime factors can differ only by a factor
+        of a complex unit.
+        "
+    }
+    meson="C"
+}

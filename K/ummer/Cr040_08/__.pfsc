@@ -225,10 +225,27 @@ deduc Pf1 of Pf.Cs1.F {
         meson="C"
     }
     
+    asrt A75 {
+        en="
+        The factors on the LHS of [(3)](A60) are
+        relatively prime, and their product is equal
+        to a $@lam eth$ power.
+        "
+    }
+    
+    asrt A80 {
+        en="
+        Each factor on the LHS of [(3)](A60) must be
+        equal to a $@lam eth$ power of a certain ideal
+        complex number, multiplied by some complex unit.
+        "
+    }
+    
     meson="
     A10, so A20. But A30. So E40, by A20, applying M35.
     Now A50 by Pf.Cs1.S.
     From Pf.S40 get A60. Now D70.
+    Then A75, so A80, using Cr035_16.Pg348_2.Thm.
     !
     Pf.Cs1.F
     "
@@ -250,11 +267,45 @@ deduc Pf1a of Pf1.D70.C {
         "
     }
     
-    meson="
-    Suppose S10. Then A20.
+    asrt A30 {
+        en="
+        $@(alpuur - alpuus)$ must be the common divisor.
+        "
+    }
     
-    !
-    Pf1.D70.C
+    asrt A40 {
+        en="
+        $@(alpuur - alpuus)$ is equal to
+        $@1 - alp$ times a complex unit.
+        "
+    }
+    
+    asrt A50 {
+        en="
+        $@1 - alp$ divides a factor
+        on the LHS of [(3)](Pf1.A60).
+        "
+    }
+    
+    asrt A60 {
+        en="
+        $@1 - alp$ divides $@wuulam$.
+        "
+    }
+    
+    asrt A70 {
+        en="
+        $@1 - alp$ divides $w$.
+        "
+    }
+    
+    flse F80 {}
+    
+    meson="
+    Suppose S10. Then A20, so A30 by Pf.S50.
+    But A40, so A50, by A30.
+    Then A60, hence A70, so F80 by Pf.Cs1.S.
+    So Pf1.D70.C.
     "
 }
 
