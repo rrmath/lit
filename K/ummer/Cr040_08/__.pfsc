@@ -31,16 +31,22 @@ deduc Thm {
     
     intr I {
         en="
-        Let $@lam$ be a prime number.
+        Let $@lam > 3$ be a prime number.
         Let $@alp$ be an imaginary root of
         the equation $@alpuulam = 1$.
         Let $@u, v, w in bbQ(alp)$.
         "
         
         note="
-        While we have stayed true to Kummer's way of defining $@alp$ (see e.g. Cr035_16),
+        1. While we have stayed true to Kummer's way of defining $@alp$ (see e.g. Cr035_16),
         we have modernized the definition of $u, v, w$. Kummer would describe these as
         \"complex numbers formed from $@lam eth$ roots of unity\".
+        
+        2. Kummer did not state here that $@lam$ should be greater than three.
+        Instead, toward the end of the proof of Case 1, he begins to say,
+        \"with the exception of the one case $@lam = 3$,\" as soon as it becomes
+        necessary to do so. At the end of his proof of Case 1 he refers to this
+        case as one \"which we will not consider here.\"
         "
     }
     
@@ -140,9 +146,117 @@ deduc Pf of Thm.C {
     "
 }
 
+deduc Pf1 of Pf.Cs1.F {
+    
+    asrt A10 {
+        en="
+        Since only the $@lam eth$ powers of $u, v, w$
+        appear in [the given equation](Pf.S40), one can
+        multiply these complex numbers by
+        arbitrary $@lam eth$ roots of unity.
+        "
+    }
+    
+    asrt A20 {
+        en="
+        $u$ can be replaced by $@alpuuh u$,
+        where $h$ is any integer.
+        "
+    }
+    
+    asrt A30 {
+        en="
+        An integer $h$ can always be found such that
+        $@alpuuh u$ has the form $@a + (1 - alp)^2 P$,
+        where $a$ is a rational integer, and $P$ is a
+        complex integer.
+        "
+        
+        note="
+        Kummer just says this is \"easy to show\" (_leicht to zeigen_).
+        "
+    }
+    
+    mthd M35 {
+        en="
+        May assume
+        w.o.l.o.g.
+        "
+    }
+    
+    exin E40 {
+        en="There are % such that"
+        intr I1 {
+            en="rational integers $a, b, c$"
+        }
+        intr I2 {
+            en="complex integers $P, Q, R$"
+        }
+        asrt A {
+            sy="
+            $@u = a + (1 - alp)^2 P$
+            $@v = b + (1 - alp)^2 Q$
+            $@w = c + (1 - alp)^2 R$
+            "
+        }
+    }
+    
+    asrt A50 {
+        en="
+        None of $a, b, c$ is
+        divisible by $@lam$.
+        "
+    }
+    
+    asrt A60 {
+        sy="
+        $@(3) quad qnt u + v; qnt u + alp v; qnt u + alp squ v; ccc
+          qnt u + alpuulam-1 v; = -wuulam$
+        "
+    }
+    
+    subdeduc D70 {
+        asrt C {
+            en="
+            The $@lam$ factors on the LHS of [(3)](A60)
+            have no common divisor.
+            "
+        }
+        meson="C"
+    }
+    
+    meson="
+    A10, so A20. But A30. So E40, by A20, applying M35.
+    Now A50 by Pf.Cs1.S.
+    From Pf.S40 get A60. Now D70.
+    !
+    Pf.Cs1.F
+    "
+}
 
-
-
+deduc Pf1a of Pf1.D70.C {
+    
+    supp S10 {
+        en="
+        Suppose $@u + alpuur v$ and $@u + alpuus v$
+        had a common divisor.
+        "
+    }
+    
+    asrt A20 {
+        en="
+        $@(alpuur - alpuus)u$ and $@(alpuur - alpuus)v$ would
+        have the same common divisor.
+        "
+    }
+    
+    meson="
+    Suppose S10. Then A20.
+    
+    !
+    Pf1.D70.C
+    "
+}
 
 
 
