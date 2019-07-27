@@ -30,7 +30,7 @@ your own Proofscape repo in which to record (and share) your notes?
 Feeling more ambitious? Why not develop your own interactive textbook?
 
 If you need some help getting started, take a look at
-[Steve's notes](https://github.com/skieffer/mathnotes) for some examples
+[Steve's notes](https://github.com/skieffer/ahop) for some examples
 of what you can do.
 
 
