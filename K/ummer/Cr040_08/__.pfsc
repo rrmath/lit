@@ -81,7 +81,7 @@ deduc Pf of Thm.C {
     asrt A20 {
         en="
         The $@lam eth$ power of a non-principal
-        ideal is never principal.
+        ideal in $@bbQ(alp)$ is never principal.
         "
     }
     
@@ -219,7 +219,8 @@ deduc Pf1 of Pf.Cs1.F {
         asrt C {
             en="
             The $@lam$ factors on the LHS of [(3)](A60)
-            have no common divisor.
+            have no common divisor, i.e. they
+            are relatively prime.
             "
         }
         meson="C"
@@ -227,9 +228,16 @@ deduc Pf1 of Pf.Cs1.F {
     
     asrt A75 {
         en="
-        The factors on the LHS of [(3)](A60) are
-        relatively prime, and their product is equal
-        to a $@lam eth$ power.
+        The product on the LHS of [(3)](A60) is
+        equal to a $@lam eth$ power.
+        "
+    }
+    
+    asrt A77 {
+        en="
+        Analogous to the ordinary integers, every complex
+        integer factors uniquely, up to units, as the product
+        of its ideal prime factors.
         "
     }
     
@@ -237,15 +245,59 @@ deduc Pf1 of Pf.Cs1.F {
         en="
         Each factor on the LHS of [(3)](A60) must be
         equal to a $@lam eth$ power of a certain ideal
-        complex number, multiplied by some complex unit.
+        complex number, multiplied by some
+        complex unit.
         "
+    }
+    
+    asrt A89 {
+        en="
+        As is well-known, every complex unit can be
+        decomposed into two factors, of which one is
+        a $@lam eth$ root of unity, and the other is unchanged
+        under the substitution of $@alp inv$ for $@alp$.
+        "
+    }
+    
+    exin E90 {
+        en="For $@r = 0, 1, 2, ddd, lam - 1$ we have % such that"
+        intr I10 {
+            en="a complex number $@tr$"
+        }
+        intr I20 {
+            en="a non-negative integer $@rho$"
+        }
+        intr I30 {
+            en="a complex unit $@Er(alp)$"
+        }
+        asrt A10 {
+            sy="$@(4) quad u + alpuur v = alpuurho Er(alp) truulam$"
+        }
+        asrt A20 {
+            en="$@tr$ is a factor of $w$"
+        }
+        asrt A30 {
+            sy="$@Er(alp) = Er(alp inv)$"
+        }
+    }
+    
+    asrt A100 {
+        en="$@truulam$ is principal"
+    }
+    
+    asrt A110 {
+        en="$@tr$ is principal"
     }
     
     meson="
     A10, so A20. But A30. So E40, by A20, applying M35.
     Now A50 by Pf.Cs1.S.
     From Pf.S40 get A60. Now D70.
-    Then A75, so A80, using Cr035_16.Pg348_2.Thm.
+    Meanwhile A75 by A60.
+    From Cr035_16.Pg348_2.Thm get A77.
+    So A80, using D70 and A75.
+    Therefore E90, using A89.
+    From E90.A10 get A100, hence A110 using Pf.A20.
     !
     Pf.Cs1.F
     "
