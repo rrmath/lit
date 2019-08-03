@@ -102,9 +102,9 @@ deduc Pf of Thm.C {
         "
     }
     
-    supp S50 {
+    supp S50 wolog {
         en="
-        Assume wolog that $u, v, w$ do not all three
+        Assume that $u, v, w$ do not all three
         have a common factor, and that therefore nor
         do any two of these have a common factor.
         "
@@ -118,23 +118,23 @@ deduc Pf of Thm.C {
             by $@1 - alp$.
             "
         }
-        flse F {}
+        flse F contra S, S40 {}
         meson="Suppose S. Then F."
     }
     
     subdeduc Cs2 {
-        supp S {
+        supp S versus Cs1.S {
             en="
             Suppose exactly one of the three
             complex numbers $u, v, w$ is divisible
             by $@1 - alp$.
             "
         }
-        flse F {}
+        flse F contra S, S40 {}
         meson="Suppose S. Then F."
     }
     
-    flse F {}
+    flse F contra S40 {}
     
     meson="
     From Thm.S and Cr040_07.Pg127_30 get A10. Hence A20, using Cr035_16.Pg356_18.Thm.
@@ -282,11 +282,11 @@ deduc Pf1 of Pf.Cs1.F {
     }
     
     asrt A100 {
-        en="$@truulam$ is principal"
+        en="$@truulam$ is an actual complex number"
     }
     
     asrt A110 {
-        en="$@tr$ is principal"
+        en="$@tr$ is an actual complex number"
     }
     
     meson="
