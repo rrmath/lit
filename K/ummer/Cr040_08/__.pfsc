@@ -114,8 +114,7 @@ deduc Pf of Thm.C {
         supp S {
             en="
             Suppose none of the three complex
-            numbers $u, v, w$ is divisible
-            by $@1 - alp$.
+            numbers $u, v, w$ is divisible by $@1 - alp$.
             "
         }
         flse F contra S, S40 {}
@@ -177,10 +176,10 @@ deduc Pf1 of Pf.Cs1.F {
         "
     }
     
-    mthd M35 {
+    mthd M35 wolog {
         en="
-        May assume
-        w.o.l.o.g.
+        Replacing $u, v, w$ with suitable
+        mutiples by powers of $@alp$...
         "
     }
     
@@ -351,7 +350,7 @@ deduc Pf1a of Pf1.D70.C {
         "
     }
     
-    flse F80 {}
+    flse F80 contra S10 {}
     
     meson="
     Suppose S10. Then A20, so A30 by Pf.S50.
