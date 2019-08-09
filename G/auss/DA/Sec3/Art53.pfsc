@@ -7,9 +7,12 @@
 #   https://royalroadmath.org/Module/lit.G.auss.DA.Sec3.Art53
 ###############################################################################
 
-from gh.rrmath.lit.G.auss.DA.Sec2.Art43 import Thm as ThmArt43
+from ...Sec2.Art39 import d_phi
+from ...Sec2.Art43 import Thm as ThmArt43
 
 deduc Thm {
+    
+    rdefs = "d_phi"
     
     intr I {
         en="
@@ -17,7 +20,6 @@ deduc Thm {
         For any divisor $d$ of $p - 1$ (including 1 and $p - 1$ itself),
         let $@psi d$ be the number of nonzero residues mod $p$ that are
         of order $d$.
-        Let $@phi d$ be as defined in Art. 39 (the Euler totient function).
         "
     }
     

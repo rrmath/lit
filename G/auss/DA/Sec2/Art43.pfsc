@@ -21,7 +21,7 @@ deduc Thm {
     asrt C {
         en="
         The congruence
-         $$@Ax^m + Bxuum-1 + Cxuum-2 + ccc + Mx + N equiv 0 mod p$
+             $@A x^m + B xuum-1 + C xuum-2 + ccc + M x + N equiv 0 mod p$
         cannot have more than $m$ incongruent roots mod $p$.
         "
     }

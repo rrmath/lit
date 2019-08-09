@@ -1,0 +1,14 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.G.auss.DA.Sec3.Art39
+###############################################################################
+
+defn d_phi      "$@phi$"    "
+                            : For any positive number $A$, let $@phi A$ express
+                            the number of numbers which are relatively prime
+                            to $A$ and not greater than $A$."
+
