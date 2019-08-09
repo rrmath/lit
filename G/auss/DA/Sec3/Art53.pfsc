@@ -10,9 +10,7 @@
 from ...Sec2.Art39 import d_phi
 from ...Sec2.Art43 import Thm as ThmArt43
 
-deduc Thm {
-    
-    rdefs = "d_phi"
+deduc Thm with d_phi {
     
     intr I {
         en="

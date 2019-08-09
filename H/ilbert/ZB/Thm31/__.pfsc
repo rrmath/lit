@@ -9,10 +9,8 @@
 
 from ..rdefs import *
 
-deduc Thm {
+deduc Thm with d_k {
     
-    rdefs = "d_k"
-
     asrt A {
         en = "
         The discriminant $d$ of the number field $k$

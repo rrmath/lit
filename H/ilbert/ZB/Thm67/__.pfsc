@@ -10,9 +10,7 @@
 from ..Lem11 import Thm as Lem11
 from ..rdefs import *
 
-deduc Thm {
-
-    rdefs="d_Kgal, d_M"
+deduc Thm with d_Kgal, d_M {
 
     intr I {
         en = "

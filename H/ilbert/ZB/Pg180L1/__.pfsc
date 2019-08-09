@@ -9,10 +9,8 @@
 
 from ..rdefs import *
 
-deduc Rem {
+deduc Rem with d_k, d_m, d_alp {
     
-    rdefs="d_k, d_m, d_alp"
-
     intr I0 {
         en = "
         Let $@d(alp)$ be the discriminant of a number,

@@ -11,10 +11,8 @@ from ..Pg180L1 import Rem as RemarkOnP180
 from ..Thm5 import Pf as Thm5Pf
 from ..rdefs import *
 
-deduc Thm {
+deduc Thm with d_ell {
     
-    rdefs="d_ell"
-
     intr I0 {
         en = "
         Let $@zeta = rme sup 2 i pie / ell;$,
@@ -42,10 +40,8 @@ deduc Thm {
     "
 }
 
-deduc Pf1 of Thm.C1 {
+deduc Pf1 of Thm.C1 with d_Fzeta, d_lam {
     
-    rdefs="d_Fzeta, d_lam"
-
     asrt A1 {
         en = "
         The different of the number $@zeta$ in $k$ is

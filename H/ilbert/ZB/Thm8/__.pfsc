@@ -10,10 +10,8 @@
 from ..Lem2 import Thm as Lem2
 from .. rdefs import *
 
-deduc Thm {
+deduc Thm with d_k, d_m {
     
-    rdefs="d_k, d_m"
-
     asrt C {
         en = "
         For any given ideal $@fra = (alp1, ddd, alpr)$,

@@ -14,10 +14,8 @@ from ..Thm117 import Pf as Pf117
 from ..Thm118 import Thm as Thm118
 from ..rdefs import *
 
-deduc Thm {
+deduc Thm with d_ell, d_zeta, d_kcyclo {
     
-    rdefs="d_ell, d_zeta, d_kcyclo"
-
     intr I1 {
         en = "
         Let $p$ be a rational prime, $@p neq ell$.

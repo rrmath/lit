@@ -28,9 +28,7 @@ work = '
 defn d_lam "$@lam$" "a prime number"
 defn d_alp "$@alp$" "an imaginary root of the equation $@alpuulam = 1$"
 
-deduc Pg127_25 {
-    
-    rdefs = "d_lam"
+deduc Pg127_25 with d_lam {
     
     asrt C {
         en="
@@ -43,9 +41,7 @@ deduc Pg127_25 {
     meson="C"
 }
 
-deduc Pg127_30 {
-    
-    rdefs = "d_lam, d_alp"
+deduc Pg127_30 with d_lam, d_alp {
     
     asrt C {
         en="
@@ -59,9 +55,7 @@ deduc Pg127_30 {
     meson="C"
 }
 
-deduc Pg128_26 {
-    
-    rdefs = "d_lam, d_alp"
+deduc Pg128_26 with d_lam, d_alp {
     
     intr I {
         en="

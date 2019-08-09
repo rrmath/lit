@@ -9,10 +9,8 @@
 
 from ..rdefs import *
 
-deduc Thm {
+deduc Thm with d_k {
     
-    rdefs="d_k"
-
     intr I {
         en = "
         Let $@alp, alp1, ddd, alpr$ be integers of $k$.

@@ -9,10 +9,8 @@
 
 from ..rdefs import *
 
-deduc Thm {
+deduc Thm with d_k, d_m, d_KrelCyc, d_ell3, d_Scyc {
     
-    rdefs="d_k, d_m, d_KrelCyc, d_ell3, d_Scyc"
-
     supp P {
         en = "
         $@N_{K|k}(A) = 1$, for some $@A in K$
