@@ -10,21 +10,22 @@
 from ..Thm127 import Thm as ZB127
 from ..Thm156 import Thm as ZB156
 from ..Pg369_2 import Thm as ZBPg369_2
+from ..rdefs import *
 
 ######################################################################
 # Theorem
-deduc Thm {
+deduc Thm with d_zeta, d_lam, d_frl {
 
     intr I1 {
         en = "
         Let $@ell$ be a regular prime.
         "
     }
-
+    
     intr I2 {
         en = "
-        $@zeta = \mathrm{e} sup 2 i pie / ell;$,
-        $@alp, beta, gam$ nonzero integers of the field $@k(zeta)$.
+        Let $@alp, beta, gam$ be nonzero integers
+        of the field $@k(zeta)$.
         "
     }
 
@@ -54,21 +55,21 @@ deduc Pf of Thm.A {
 
     subdeduc Cs1 {
 
-        supp S {
+        supp S versus Cs2.S {
             en = "
             Suppose none of the three
-            integers $@alp, beta, gam$ is
-            divisible by $@frl$.
+            integers $@alp, beta, gam$ is divisible
+            by $@frl$.
             "
         }
 
         subdeduc Cs1A {
 
-            supp S {
+            supp S versus Cs1B.S, Cs1C.S {
                 sy = "$@ell = 3$"
             }
 
-            flse F {}
+            flse F contra S {}
 
             meson = "
             Suppose S. Then F.
@@ -81,7 +82,7 @@ deduc Pf of Thm.A {
                 sy = "$@ell = 5$"
             }
 
-            flse F {}
+            flse F contra S {}
 
             meson = "
             Suppose S. Then F.
@@ -94,17 +95,18 @@ deduc Pf of Thm.A {
                 sy = "$@ell geq 7$"
             }
 
-            flse F {}
+            flse F contra S {}
 
             meson = "
             Suppose S. Then F.
             "
         }
 
-        flse F {}
+        flse F contra S {}
 
         meson = "
-        F by Cs1A and Cs1B and Cs1C.
+        Suppose S. Now Cs1A.
+        But F by Cs1A and Cs1B and Cs1C.
         "
     }
 
@@ -113,22 +115,22 @@ deduc Pf of Thm.A {
         supp S {
             en = "
             Suppose at least one of the three
-            integers $@alp, beta, gam$ is
-            divisible by $@frl$.
+            integers $@alp, beta, gam$ is divisible by $@frl$.
             "
         }
 
-        flse F {}
+        flse F contra S {}
 
         meson = "
         Suppose S. Then F.
         "
     }
 
-    flse F {}
+    flse F contra S {}
 
     meson = "
-    F by Cs1 and Cs2. Hence Thm.A.
+    Suppose S. Next, Cs1.
+    But F by Cs1 and Cs2. Hence Thm.A.
     "
 }
 
