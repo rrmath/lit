@@ -58,8 +58,7 @@ deduc Pf of Thm.A {
         supp S versus Cs2.S {
             en = "
             Suppose none of the three
-            integers $@alp, beta, gam$ is divisible
-            by $@frl$.
+            integers $@alp, beta, gam$ is divisible by $@frl$.
             "
         }
 
