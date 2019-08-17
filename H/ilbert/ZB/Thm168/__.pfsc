@@ -553,7 +553,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
 
         subdeduc D30 {
 
-            supp S10 {
+            supp S10 versus D40.S10, D50.S10 {
                 sy = "$@r equiv 0 mod ell$"
             }
 
@@ -561,7 +561,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
                 sy = "$@beta equiv 0 mod frl$"
             }
 
-            flse F30 {}
+            flse F30 contra S10 {}
 
             meson = "
             Suppose S10. Then A20, hence F30 since Pf.Cs1.S.
@@ -586,7 +586,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
                 sy = "$@alp equiv 0 mod frl$"
             }
 
-            flse F50 {}
+            flse F50 contra S10 {}
 
             meson = "
             Suppose S10.
@@ -638,7 +638,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
                 sy = "$@alp equiv 0 mod frl$"
             }
 
-            flse F100 {}
+            flse F100 contra S10 {}
 
             meson = "
             Suppose S10.
@@ -648,7 +648,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
             "
         }
 
-        flse F60 {}
+        flse F60 contra S10 {}
 
         asrt A70 {
             en = "
