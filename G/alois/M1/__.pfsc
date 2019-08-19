@@ -1,0 +1,120 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.G.alois.M1
+###############################################################################
+
+work = '
+{
+    "journal": "Liouville",
+    "kind": "article",
+    "libpath": "lit.G.alois.M1",
+    "nickname": "the first memoir",
+    "publisher": "Leipzig",
+    "year": 1846
+}'
+
+deduc Lem3 {
+    
+    intr I1 {
+        en="
+        Let an equation with distinct roots
+        $@a, b, c, d, ddd$ be given.
+        "
+    }
+    
+    intr I2 {
+        en="
+        Let $@V = vph(a, b, c, d, ddd)$ be as in Lemma 2.
+        "
+    }
+    
+    asrt C {
+        en="
+        Each of the roots $@a, b, c, d, ddd$ can be expressed
+        as a rational function of $V$.
+        "
+    }
+    
+    meson="Let I1. Let I2. Then C."
+}
+
+deduc Pf3 of Lem3.C {
+    
+    intr I10 {
+        en="
+        Form the product
+          $@bqnt V - vph(a, b, c, d, ddd); bqnt V - vph(a, c, b, d, ddd);
+           bqnt V - vph(a, b, d, c, ddd); ccc$
+        over all those permutations of the roots that hold $a$ fixed.
+        "
+    }
+    
+    asrt A20 {
+        en="[This expression](I10) is symmetrical in $@b, c, d, ddd$."
+    }
+    
+    asrt A30 {
+        en="[This expression](I10) can be written as a function of $a$."
+    }
+    
+    asrt A40 {
+        en="
+        We get an equation of the form
+                     $@F(V, a) = 0$.
+        "
+    }
+    
+    subdeduc S45 {
+        
+        supp S10 {
+            en="
+            Suppose $@F(V, b) = 0$.
+            "
+        }
+        
+        asrt A20 {
+            en="
+            [This equation](S10) would have a common factor
+            with [the similar one](Pf3.A40).
+            "
+        }
+        
+        asrt A30 {
+            en="
+            One of the functions $@vph(a, ddd)$ must equal
+            one of the functions $@vph(b, ddd)$.
+            "
+        }
+        
+        flse F40 contra S10 {}
+        
+        meson="
+        Suppose S10. Then A20, so A30, hence F40, by Lem3.I2.
+        "
+    }
+    
+    asrt A50 {
+        en="
+        One can express $a$ rationally in $V$ by finding
+        the common solution between [this equation](A40) and
+        [the given one](Lem3.I1).
+        "
+    }
+    
+    asrt A60 {
+        en="
+        $a$ is the only solution common to the two equations.
+        "
+    }
+    
+    meson="
+    Let I10. Then A20, so A30. Therefore A40.
+    Now A50, hence Lem3.C.
+    But A50 by A60, by S45.
+    "
+}
+
