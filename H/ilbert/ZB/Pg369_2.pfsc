@@ -7,7 +7,9 @@
 #   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Pg369_2
 ###############################################################################
 
-deduc Thm {
+from gh.rrmath.lit.H.ilbert.ZB.rdefs import *
+
+deduc Thm with d_zeta, d_lam, d_frl {
     intr I {
         sy="Let $@alp in bbZ[zet]$."
     }
