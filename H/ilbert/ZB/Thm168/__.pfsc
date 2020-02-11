@@ -286,7 +286,7 @@ deduc Pf1C of Pf.Cs1.Cs1C.F {
     intr I60 {
         en = "
         Let $@fra$ be the greatest common ideal
-        divisor of the number $@alp$, $@beta$.
+        divisor of the numbers $@alp$, $@beta$.
         "
     }
 
