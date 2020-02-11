@@ -107,7 +107,7 @@ deduc Pf3 of Lem3.C {
     
     asrt A60 {
         en="
-        $a$ is the only solution common to the two equations.
+        $a$ is the only solution common to [the two equations](Lem3.I1;A40).
         "
     }
     
