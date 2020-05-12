@@ -1,0 +1,89 @@
+###############################################################################
+# This module belongs to the Royalroad Math Literature Library.
+# It is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License (CC BY-SA 4.0):
+#   https://creativecommons.org/licenses/by-sa/4.0/
+# Attribution may be made through hyperlink to the following URL:
+#   https://royalroadmath.org/Module/lit.H.ilbert.ZB.Thm17
+###############################################################################
+
+from ..rdefs import *
+
+deduc Thm with d_k, d_m {
+    
+    asrt A {
+        en="
+        The norm of a prime ideal $@frp$ is a power
+        of the rational prime $p$ that $@frp$ divides.
+        "
+    }
+    
+    meson="A"
+}
+
+deduc Pf of Thm.A {
+    
+    intr I10 {
+        en="
+        Let $@iota1, ddd, iotam$ be an
+        integral basis for the field $k$.
+        "
+    }
+    
+    exin E20 {
+        en="There are % such that"
+        intr I10 {
+            sy="$@1 leq f leq m$"
+        }
+        intr I20 {
+            sy="$@set omega1, ddd, omegaf; subseteq set iota1, ddd, iotam;$"
+        }
+        asrt A30 {
+            en="
+            $@omega1, ddd, omegaf$ are independent in the sense
+            that no congruence of the form
+                $$@ a1 omega1 + ccc + af omegaf cong 0  pmod frp$$
+            holds, where $@a1, ddd, af$ are rational integers not
+            all divisible by $p$.
+            "
+        }
+        asrt A40 {
+            en="
+            Each of the other $m - f$ elements $@iotai$ of the integral basis
+            is congruent mod $@frp$ to an expression of the
+            form $@a1 omega1 + ccc + af omegaf$.
+            "
+        }
+    }
+    
+    asrt A30 {
+        en="
+        Every algebraic integer in the field is
+        congruent to [such an expression](E20.A40).
+        "
+    }
+    
+    asrt A40 {
+        en="
+        The number of residue classes of integers of $k$
+        mod $@frp$ is obviously $p^f$.
+        "
+    }
+    
+    meson="
+    Let I10. Then E20, so A30, therefore A40, hence Thm.A.
+    "
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
