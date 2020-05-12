@@ -42,7 +42,7 @@ deduc Pf of Thm.A {
             en="
             $@omega1, ddd, omegaf$ are independent in the sense
             that no congruence of the form
-                $$@ a1 omega1 + ccc + af omegaf cong 0  pmod frp$$
+                $$@ a1 omega1 + ccc + af omegaf equiv 0  pmod frp$$
             holds, where $@a1, ddd, af$ are rational integers not
             all divisible by $p$.
             "
